@@ -43,13 +43,17 @@ All four use the supplied red and yellow wordmarks unchanged and the seven sourc
 
 ## Viewing the concepts
 
-The pages are static HTML with no build step. Serve the project root and open the review board:
+The pages are static HTML with no build step and no server. Open the review board, [docs/concepts/index.html](docs/concepts/index.html), directly in a browser: double-click it, or drag it into a browser window. It shows live previews of all four concepts and links to each one.
+
+From a terminal at the project root:
 
 ```bash
-python3 -m http.server 4173 --bind 127.0.0.1
+open docs/concepts/index.html
 ```
 
-Then visit <http://127.0.0.1:4173/docs/concepts/>.
+On Windows, use `start docs\concepts\index.html`; on Linux, `xdg-open docs/concepts/index.html`.
+
+Fonts load from Google Fonts. Without an internet connection the pages still work, but with fallback fonts.
 
 ## Checking the concepts
 
