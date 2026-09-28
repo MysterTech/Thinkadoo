@@ -1,3 +1,7 @@
+<p align="center">
+  <img src="docs/concepts/assets/thinkadoo-red.png" alt="Thinkadoo" width="360">
+</p>
+
 # Thinkadoo
 
 Thinkadoo is a children's craft-kit and workshop brand that turns imagination, art and creative discovery into screen-free hands-on experiences for children.
