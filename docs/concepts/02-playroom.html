@@ -1,0 +1,307 @@
+<!doctype html>
+<!--
+THESIS: An invitation to get your hands into an idea. The homepage is an interactive toy shelf, not a split sales hero.
+OWN-WORLD: Cobalt rooms, white and yellow Fredoka lettering, chunky controls, crisp illustrated craft objects and green club posters.
+STORY: Families recognise a screen-free creative activity, try making/painting/playing, explore a kit, then discover workshops.
+FIRST VIEWPORT: A broad centered headline sits above a three-position selector and a giant illustrated shelf. A concise explanation and shop action anchor the scene.
+FORM: The Playroom is the user-requested second concept, as recorded in docs/design/website-concepts.md. Its centered shelf and colour rails are the pinned staging; no random seed applies.
+-->
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="theme-color" content="#2960ad">
+<title>Thinkadoo — The Playroom · Concept B</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Fredoka:wght@400;500;600;700&display=swap" rel="stylesheet">
+<style>
+:root{--blue:#2960ad;--yellow:#fcda00;--green:#5cba47;--red:#ef3a24;--teal:#32c3e0;--ink:#201b4a;--white:#fff;--figure:#fcda00;--ease:cubic-bezier(.16,1,.3,1);--spring:cubic-bezier(.2,1.55,.4,1)}
+*{box-sizing:border-box}html{scroll-behavior:smooth;scroll-padding-top:28px}body{margin:0;background:var(--blue);color:white;font-family:'DM Sans',Arial,sans-serif;font-size:17px;line-height:1.55}button,a{-webkit-tap-highlight-color:transparent}button,input{font:inherit}button{cursor:pointer}button:disabled{cursor:not-allowed}a{color:inherit;text-decoration:none}button,a{touch-action:manipulation}button:focus-visible,a:focus-visible,input:focus-visible{outline:3px solid currentColor;outline-offset:6px}button{color:inherit}h1,h2,h3,p{margin:0}h1,h2,h3{font-family:'Fredoka','Arial Rounded MT Bold',Arial,sans-serif;font-weight:600;line-height:.98;letter-spacing:-.025em;text-wrap:balance}p{max-width:65ch}svg{display:block;max-width:100%}img{max-width:100%;height:auto}button svg,a svg{flex-shrink:0}button{border:0}::selection{background:var(--yellow);color:var(--ink)}[hidden]{display:none!important}.sprite{position:absolute;width:0;height:0;overflow:hidden}.skip{position:fixed;z-index:20;top:12px;left:12px;transform:translateY(-200%);background:white;color:var(--ink);padding:12px 20px}.skip:focus{transform:none}.wrap{max-width:1440px;margin:auto;padding:0 5%}.site-header{position:relative;display:flex;align-items:center;justify-content:space-between;min-height:104px;gap:25px;z-index:3}.brand{display:inline-flex;align-items:center;min-height:54px}.brand img{display:block;width:190px;aspect-ratio:1950/606}.nav{display:flex;align-items:center;gap:34px;font-size:15px;font-weight:600}.nav a{display:inline-flex;align-items:center;min-height:44px;position:relative}.nav a::after{content:'';position:absolute;left:0;right:0;bottom:5px;height:2px;background:var(--yellow);transform:scaleX(0);transform-origin:left;transition:transform .22s var(--ease)}.nav a:hover::after,.nav a:focus-visible::after{transform:scaleX(1)}.nav .nav-contact{border:1px solid #ffffff80;border-radius:100px;padding:0 22px}.nav-contact::after{display:none}.nav .nav-contact:hover{background:white;color:var(--blue)}.menu-toggle{display:none;background:none;border:1px solid #ffffff80;border-radius:30px;min-height:44px;padding:0 18px}.hero{position:relative;padding:23px 0 58px}.hero-top{text-align:center;max-width:1400px;margin:auto;padding:0 24px}.hero h1{font-size:clamp(64px,8.7vw,139px);line-height:.93;font-weight:600}.hero h1 span{display:block;color:var(--yellow)}.hero-intro{font-size:18px;margin:22px auto 24px;max-width:530px;line-height:1.55}.mode-tabs{position:relative;z-index:2;display:inline-flex;gap:5px;background:#201b4a70;padding:6px;border-radius:100px}.mode-tab{display:flex;align-items:center;justify-content:center;gap:9px;min-height:48px;padding:8px 26px;border-radius:100px;background:transparent;font-family:'Fredoka',Arial,sans-serif;font-size:20px;font-weight:500;transition:background .2s,transform .25s var(--spring),color .2s}.mode-tab svg{width:20px;height:20px}.mode-tab[aria-pressed="true"]{background:var(--yellow);color:var(--ink);box-shadow:0 3px 0 #201b4a}.mode-tab:hover{transform:translateY(-2px)}.mode-tab:active{transform:translateY(2px)}.shelf{position:relative;max-width:1250px;margin:2px auto 0;min-height:332px;padding:0 30px}.shelf::after{content:'';display:block;position:absolute;bottom:19px;left:4%;right:4%;height:12px;background:var(--yellow);border-radius:5px;box-shadow:0 8px 0 #201b4a80;z-index:0}.shelf-scene{position:relative;height:330px;z-index:1}.shelf-scene>svg{width:100%;height:100%;overflow:visible}.shelf-caption{position:absolute;font-family:'Fredoka',sans-serif;font-size:20px;color:var(--yellow);top:31%;left:6%;max-width:155px;line-height:1.1;transform:rotate(-8deg)}.shelf-caption::after{content:'';display:block;width:50px;height:34px;margin:12px 0 0 50px;border-right:2px solid currentColor;border-bottom:2px solid currentColor;border-radius:0 0 50% 0;transform:rotate(20deg)}.shelf .right-caption{left:auto;right:6%;transform:rotate(7deg);top:40%;max-width:120px}.right-caption::after{display:none}.scene-main{transform-origin:50% 85%;animation:arrive .8s var(--spring) both}.scene-prop{transform-box:fill-box;transform-origin:50% 100%;animation:prop-arrive .65s var(--spring) both;animation-delay:.12s}.scene-prop.later{animation-delay:.22s}.make-roof{transform-box:fill-box;transform-origin:center;animation:roof-fit 1.05s var(--spring) both}.play-truck{animation:drive-in 1s var(--ease) both;transform-origin:center}.play-wheel{transform-box:fill-box;transform-origin:center;animation:wheel-turn 1s var(--ease)}.paint-brush{transform-box:fill-box;transform-origin:80% 90%;animation:paint-dip .9s var(--ease)}.scene-hit{cursor:default;transition:transform .3s var(--spring);transform-origin:50% 80%}.scene-hit:hover{transform:rotate(-2deg)}.hero-bottom{display:flex;align-items:center;justify-content:center;gap:35px;margin:22px auto 0;padding:0 24px;max-width:930px}.mode-summary{max-width:390px;min-height:52px;font-size:16px;line-height:1.5}.mode-summary strong{font-weight:700}.button{display:inline-flex;align-items:center;justify-content:center;gap:28px;min-height:54px;background:var(--yellow);color:var(--ink);padding:13px 26px;border-radius:100px;font-weight:700;font-size:15px;box-shadow:0 5px 0 var(--ink);transition:transform .2s var(--spring),box-shadow .2s;white-space:nowrap}.button:hover{transform:translateY(-3px);box-shadow:0 8px 0 var(--ink)}.button:active{transform:translateY(4px);box-shadow:0 1px 0 var(--ink)}.button svg{width:22px;height:22px}.button.dark{background:var(--ink);color:white;box-shadow:0 5px 0 #201b4a40}.button.light{background:white}.hero .paint-tools{display:flex;gap:7px;align-items:center;justify-content:center;margin-top:18px}.paint-tools span{font-size:14px;margin-right:5px}.swatch{width:44px;height:44px;border-radius:50%;background:var(--swatch);border:3px solid transparent;box-shadow:inset 0 0 0 4px var(--blue)}.swatch[aria-pressed="true"]{border-color:white}.section-promise{background:var(--yellow);color:var(--ink);padding:25px 0;overflow:hidden}.promise-line{display:flex;justify-content:center;align-items:center;gap:30px;font-family:'Fredoka',sans-serif;font-weight:500;font-size:clamp(24px,3vw,39px);line-height:1.15;text-align:center;padding:0 24px}.promise-line svg{width:42px;height:42px;flex-shrink:0}.shop{background:white;color:var(--ink);padding:88px 0 100px}.section-head{display:flex;align-items:flex-end;justify-content:space-between;gap:35px;margin-bottom:37px}.section-head h2{font-size:clamp(45px,5.3vw,78px);max-width:720px}.section-head p{font-size:16px;max-width:280px;padding-bottom:7px}.rail-controls{display:flex;gap:10px;margin-top:20px}.round-button{width:50px;height:50px;display:inline-grid;place-items:center;border-radius:50%;border:1px solid currentColor;background:none;transition:background .2s,transform .2s}.round-button svg{width:22px;height:22px}.round-button:hover{background:var(--yellow);transform:rotate(-5deg)}.round-button:disabled{opacity:.3;transform:none;background:none}.product-rail{display:flex;gap:28px;overflow-x:auto;scroll-snap-type:x mandatory;scrollbar-width:thin;scrollbar-color:var(--blue) #edf0f5;padding-bottom:20px;overscroll-behavior-x:contain}.product{flex:0 0 67%;min-width:0;scroll-snap-align:start}.product-art{display:flex;align-items:center;justify-content:center;width:100%;height:370px;position:relative;isolation:isolate;background:var(--yellow);border-radius:6px;overflow:hidden;color:var(--ink)}.product:nth-child(2) .product-art{background:var(--teal)}.product-art .product-word{position:absolute;top:16px;left:23px;z-index:-1;font-family:'Fredoka',sans-serif;font-size:clamp(60px,9vw,136px);font-weight:600;color:#201b4a;line-height:.9;letter-spacing:-.04em;opacity:.16}.product-art>svg{height:95%;width:95%;transition:transform .65s var(--spring)}.product-art:hover>svg{transform:rotate(-3deg) scale(1.035)}.product-art .corner-label{position:absolute;right:20px;top:22px;display:flex;align-items:center;justify-content:center;background:white;border:2px solid var(--ink);border-radius:50%;width:84px;height:84px;text-align:center;line-height:1.1;font-weight:600;font-size:14px;transform:rotate(9deg)}.product-info{display:flex;justify-content:space-between;align-items:center;gap:18px;padding:25px 2px 8px}.product h3{font-size:31px;max-width:330px;line-height:1.05}.product-info p{font-size:15px;margin-top:10px}.text-button{display:inline-flex;gap:10px;align-items:center;justify-content:center;min-height:48px;background:none;color:var(--ink);font-weight:700;border-bottom:2px solid var(--ink);padding:5px 0;white-space:nowrap}.text-button svg{width:19px;height:19px;transition:transform .2s}.text-button:hover svg{transform:translateX(4px)}.workshops{background:var(--green);color:var(--ink);position:relative;padding:82px 0 88px}.workshop-inner{display:grid;grid-template-columns:1fr 1fr;gap:7%;align-items:center}.workshop-copy h2{font-size:clamp(56px,6.3vw,92px);line-height:.93;max-width:610px}.workshop-copy>p{max-width:430px;margin:27px 0 28px}.club-note{display:inline-block;font-family:'Fredoka',sans-serif;font-size:23px;margin-bottom:24px;transform:rotate(-4deg);border-bottom:2px solid var(--ink)}.club-art{width:100%;aspect-ratio:1;position:relative;display:flex;align-items:center;justify-content:center}.club-art>svg{width:100%;height:100%;overflow:visible}.club-art .hand-left,.club-art .hand-right{transform-box:fill-box;transform-origin:center;transition:transform .7s var(--spring)}.club-art:hover .hand-left{transform:rotate(4deg) translateX(7px)}.club-art:hover .hand-right{transform:rotate(-4deg) translateX(-7px)}.club-art.in-view .craft-center{animation:club-pop .9s var(--spring)}.workshop-foot{display:flex;justify-content:space-between;align-items:center;gap:20px;border-top:1px solid #201b4a55;padding-top:27px;margin-top:49px;font-size:15px}.workshop-foot p{max-width:590px}.story{background:var(--blue);padding:92px 0 86px}.story-top{display:grid;grid-template-columns:1.2fr 1fr;gap:11%;align-items:start}.story h2{font-size:clamp(52px,6.2vw,88px);max-width:700px;line-height:1}.story h2 em{font-style:normal;color:var(--yellow)}.story-copy{padding-top:5px}.story-copy p{font-size:18px;line-height:1.7;margin-bottom:21px}.story-line{margin-top:64px;display:flex;align-items:center;justify-content:space-between;gap:30px;border-top:1px solid #ffffff50;padding-top:29px;font-family:'Fredoka',sans-serif;font-size:clamp(24px,3vw,39px);font-weight:500}.story-line svg{width:43px;height:43px;flex-shrink:0;color:var(--yellow)}.site-footer{background:var(--ink);padding:60px 0 100px}.footer-top{display:flex;justify-content:space-between;align-items:flex-start;gap:40px}.footer-brand img{width:270px;aspect-ratio:1950/606}.footer-brand p{max-width:340px;margin-top:22px;color:#ffffffd9;font-size:15px}.footer-links{display:grid;grid-template-columns:1fr 1fr;column-gap:55px;row-gap:7px;padding-top:5px}.footer-links a,.footer-links button{font-size:15px;background:none;text-align:left;padding:8px 0;min-height:44px}.footer-links a:hover,.footer-links button:hover{color:var(--yellow)}.footer-bottom{border-top:1px solid #ffffff33;margin-top:48px;padding-top:21px;display:flex;justify-content:space-between;gap:20px;font-size:13px;color:#ffffffb8}.prototype-controls{position:fixed;bottom:16px;right:17px;z-index:10;display:flex;align-items:center;gap:2px;padding:4px;border-radius:100px;background:var(--ink);border:1px solid #ffffff55;box-shadow:0 4px 16px #201b4a30;font-size:12px;color:white}.prototype-controls>a,.prototype-controls>button{min-height:36px;padding:8px 13px;border-radius:50px;background:none;color:inherit}.prototype-controls>a:hover,.prototype-controls>button:hover{background:#ffffff18}.prototype-controls>a{border-right:1px solid #ffffff30;border-top-right-radius:0;border-bottom-right-radius:0}.motion-dot{display:inline-block;background:var(--green);width:7px;height:7px;border-radius:50%;margin-right:5px}.motion-off .motion-dot{background:#fff}.dialog{width:min(850px,calc(100% - 36px));max-height:90dvh;padding:0;border:0;border-radius:16px;color:var(--ink);background:white;box-shadow:0 16px 80px #09072880;overflow:auto}.dialog::backdrop{background:#111b3dc9}.dialog-header{display:flex;justify-content:space-between;align-items:center;padding:22px 28px;border-bottom:1px solid #201b4a25;font-size:14px}.dialog-close{width:44px;height:44px;border-radius:50%;background:var(--yellow);color:var(--ink);font-size:28px;line-height:1}.dialog-body{padding:32px}.dialog-content{display:grid;grid-template-columns:1fr 1fr;gap:30px;align-items:center}.dialog-art{background:var(--yellow);border-radius:6px;min-height:230px;display:grid;place-items:center}.dialog-art svg{width:100%;height:260px}.dialog h2{font-size:38px;line-height:1.05;margin-bottom:18px}.dialog p{font-size:15px;line-height:1.65}.dialog .preview-note{font-size:13px;margin-top:20px;color:#47435d}.checkout-note{border-top:1px solid #201b4a30;margin-top:28px;padding-top:20px}.checkout-note button{background:#e8e9ee;color:#5f5d6e;border-radius:50px;min-height:48px;padding:10px 22px;margin-top:14px;font-weight:600}.workshop-options{display:grid;grid-template-columns:1fr 1fr;gap:12px;margin:23px 0}.workshop-option{position:relative;display:block;padding:18px;border:2px solid #d9d9e3;border-radius:9px;cursor:pointer;font-weight:700}.workshop-option:has(input:checked){border-color:var(--blue);background:#eef3fa}.workshop-option input{margin-right:6px;accent-color:var(--blue);width:17px;height:17px}.workshop-option span{display:block;font-size:13px;font-weight:400;line-height:1.5;margin-top:8px}.workshop-choice{padding:15px 18px;background:var(--yellow);border-radius:6px;font-size:14px}.legal-copy{max-width:620px}.legal-copy p+p{margin-top:16px}.legal-copy .button{margin-top:24px}.noscript-message{padding:12px 24px;background:var(--yellow);color:var(--ink);text-align:center;font-size:14px}
+@keyframes arrive{0%{transform:translateY(28px) scale(.94) rotate(-3deg)}65%{transform:translateY(-7px) scale(1.015) rotate(1deg)}100%{transform:none}}
+@keyframes prop-arrive{0%{transform:translateY(22px) rotate(-9deg)}70%{transform:translateY(-6px) rotate(3deg)}100%{transform:none}}
+@keyframes roof-fit{0%{transform:translateY(-32px) rotate(-3deg)}70%{transform:translateY(3px) rotate(.5deg)}100%{transform:none}}
+@keyframes drive-in{0%{transform:translateX(-100px) rotate(-2deg)}75%{transform:translateX(12px) rotate(1deg)}100%{transform:none}}
+@keyframes wheel-turn{from{transform:rotate(-140deg)}to{transform:rotate(0)}}
+@keyframes paint-dip{0%{transform:rotate(-17deg) translateY(-15px)}50%{transform:rotate(7deg)}100%{transform:none}}
+@keyframes club-pop{0%{transform:rotate(-4deg) scale(.96)}65%{transform:rotate(2deg) scale(1.02)}100%{transform:none}}
+html.motion-off{scroll-behavior:auto!important}.motion-off *,.motion-off *::before,.motion-off *::after{animation:none!important;transition:none!important;scroll-behavior:auto!important}.motion-off .scene-hit:hover,.motion-off .product-art:hover>svg,.motion-off .club-art:hover .hand-left,.motion-off .club-art:hover .hand-right,.motion-off .mode-tab:hover,.motion-off .mode-tab:active,.motion-off .button:hover,.motion-off .button:active,.motion-off .round-button:hover,.motion-off .text-button:hover svg{transform:none!important}
+@media(min-width:1600px){.hero{padding-top:38px}.shelf{margin-top:15px}.shelf-scene{height:390px}.shelf{min-height:392px}.hero-bottom{margin-top:28px}}
+@media(max-width:900px){.wrap{padding:0 6%}.site-header{min-height:93px}.brand img{width:165px}.nav{gap:20px}.nav .nav-contact{padding:0 14px}.hero h1{font-size:clamp(62px,10vw,96px)}.hero{padding-top:29px}.hero-intro{font-size:17px}.shelf{padding:0 10px}.shelf-caption{left:3%;font-size:17px;max-width:115px}.shelf .right-caption{right:3%;max-width:90px}.shelf-scene{height:290px}.shelf{min-height:292px}.hero-bottom{gap:28px}.product{flex-basis:82%}.product-art{height:330px}.section-head{align-items:start}.section-head p{max-width:220px}.workshop-inner{gap:3%}.workshop-copy h2{font-size:66px}.club-note{font-size:19px}.story-top{gap:7%}.story-copy p{font-size:16px}.footer-links{column-gap:30px}.footer-brand img{width:230px}}
+@media(max-width:650px){body{font-size:16px}.wrap{padding:0 22px}.site-header{min-height:85px;flex-wrap:wrap;gap:0}.brand img{width:160px}.js .menu-toggle{display:block}.nav{width:100%;justify-content:space-between;gap:4px;padding:0 0 18px;font-size:14px}.js .nav{display:none}.js .nav.is-open{display:flex}.nav .nav-contact{padding:0 11px;min-height:40px}.hero{padding:25px 0 38px}.hero-top{padding:0 16px}.hero h1{font-size:clamp(52px,10.7vw,72px);line-height:.98;letter-spacing:-.025em}.hero h1 span{max-width:440px;margin:auto}.hero-intro{font-size:15px;line-height:1.55;max-width:310px;margin:20px auto}.mode-tabs{padding:5px;gap:2px}.mode-tab{min-height:45px;padding:7px 18px;font-size:18px;gap:7px}.mode-tab svg{width:18px;height:18px}.shelf{padding:0;margin-top:0;min-height:248px}.shelf-scene{height:245px;overflow:hidden}.shelf-scene>svg{width:155%;max-width:none;margin-left:-27.5%;height:100%}.shelf::after{left:5%;right:5%;bottom:16px;height:9px}.shelf-caption{top:14%;left:8%;font-size:15px;max-width:83px}.shelf-caption::after{width:28px;height:22px;margin-left:29px;margin-top:6px}.shelf .right-caption{top:18%;right:6%;font-size:14px;max-width:73px}.hero-bottom{flex-direction:column;gap:21px;margin-top:12px}.mode-summary{text-align:center;min-height:47px;font-size:15px;max-width:330px}.button{min-height:52px;padding:12px 23px;font-size:14px}.hero .paint-tools{margin-top:19px}.promise-line{gap:16px;font-size:23px;padding:0 20px;flex-wrap:wrap;line-height:1.2}.promise-line svg{width:27px;height:27px}.promise-line .promise-third{display:none}.section-promise{padding:21px 0}.shop{padding:53px 0 58px}.section-head{display:block;margin-bottom:25px}.section-head h2{font-size:48px;max-width:340px}.section-head p{max-width:310px;margin-top:17px;padding:0}.rail-controls{justify-content:flex-end;margin-top:17px}.round-button{width:45px;height:45px}.product-rail{gap:18px}.product{flex-basis:91%}.product-art{height:278px}.product-art .product-word{font-size:75px;top:19px;left:16px}.product-art .corner-label{width:60px;height:60px;right:11px;top:15px;font-size:11px;border-width:1.5px}.product-art>svg{width:120%;max-width:none;height:100%}.product-info{display:block;padding-top:20px}.product h3{font-size:30px;max-width:285px}.product-info p{font-size:14px;margin-top:9px}.text-button{margin-top:10px;font-size:14px;gap:28px}.workshops{padding:52px 0}.workshop-inner{display:flex;flex-direction:column;gap:25px}.workshop-copy{width:100%}.club-note{font-size:20px;margin-bottom:22px}.workshop-copy h2{font-size:64px;max-width:390px}.workshop-copy>p{max-width:390px;margin:23px 0}.club-art{max-width:390px;margin:auto;aspect-ratio:1.08}.workshop-foot{margin-top:24px;display:block;padding-top:22px;font-size:14px}.workshop-foot a{display:inline-flex;margin-top:12px}.story{padding:58px 0}.story-top{display:block}.story h2{font-size:57px;max-width:390px}.story-copy{margin-top:29px}.story-copy p{font-size:16px;margin-bottom:17px}.story-line{margin-top:31px;padding-top:24px;font-size:23px;gap:14px}.story-line svg{width:29px;height:29px}.story-line .story-last{display:none}.site-footer{padding:44px 0 105px}.footer-top{display:block}.footer-brand img{width:230px}.footer-brand p{font-size:14px;max-width:300px}.footer-links{margin-top:30px;grid-template-columns:1fr 1fr;gap:1px 20px}.footer-bottom{display:block;margin-top:32px;font-size:12px}.footer-bottom p+p{margin-top:9px}.prototype-controls{bottom:12px;right:12px;font-size:11px}.prototype-controls>a,.prototype-controls>button{padding:7px 10px;min-height:34px}.dialog{width:calc(100% - 24px);max-height:92dvh}.dialog-header{padding:12px 18px}.dialog-body{padding:22px}.dialog-content{display:block}.dialog-art{min-height:180px;margin-bottom:24px}.dialog-art svg{height:210px}.dialog h2{font-size:34px}.dialog-close{width:42px;height:42px}.workshop-options{grid-template-columns:1fr}.workshop-option{padding:15px}}
+@media(prefers-reduced-motion:reduce){html{scroll-behavior:auto}*,*::before,*::after{animation:none!important;transition:none!important;scroll-behavior:auto!important}.scene-hit:hover,.product-art:hover>svg,.club-art:hover .hand-left,.club-art:hover .hand-right,.mode-tab:hover,.mode-tab:active,.button:hover,.button:active,.round-button:hover,.text-button:hover svg{transform:none!important}}
+
+/* Browsing has the same material language as the interactive shelf. */
+.hero h1{overflow:clip;padding:.045em 0 .08em}.hero h1 .line-one{color:white;transform:translateX(var(--hero-shift,0px))}.hero h1 .line-two{transform:translateX(calc(var(--hero-shift,0px) * -1))}.hero-word{will-change:transform}
+.shelf-scene>svg{transform:perspective(950px) rotateY(var(--shelf-y,0deg)) rotateX(var(--shelf-x,0deg)) translateY(var(--shelf-lift,0px));transform-origin:50% 90%;transition:transform .48s var(--spring)}
+.section-promise{position:relative;isolation:isolate}.section-promise::before{content:'';position:absolute;inset:0;z-index:-1;background:var(--green);clip-path:inset(0 calc(100% - var(--band-wipe,0%)) 0 0)}
+.promise-line{gap:44px}.promise-line span{display:inline-block;transform:translateX(var(--band-shift,0px))}.promise-line span:nth-of-type(2){transform:translateX(calc(var(--band-shift,0px) * -1))}.promise-line svg{transform:rotate(var(--band-turn,0deg))}
+.product-art>svg{transform:translateY(var(--rail-y,0px)) rotate(var(--rail-angle,0deg));transition:transform .45s var(--spring)}.product-art:is(:hover,:focus-visible)>svg{transform:translateY(calc(var(--rail-y,0px) - 9px)) rotate(calc(var(--rail-angle,0deg) - 3deg)) scale(1.035)}
+.product-art .corner-label{transition:transform .45s var(--spring)}.product-art:is(:hover,:focus-visible) .corner-label{transform:rotate(-5deg) scale(1.07)}.product:focus-within .product-art>svg{transform:translateY(-9px) rotate(-3deg) scale(1.035)}
+.motion-off .hero-word,.motion-off .shelf-scene>svg,.motion-off .promise-line span,.motion-off .promise-line svg,.motion-off .product-art>svg,.motion-off .product-art:is(:hover,:focus-visible) .corner-label,.motion-off .product:focus-within .product-art>svg{transform:none!important}.motion-off .section-promise::before{clip-path:inset(0 100% 0 0)}
+@media(max-width:650px){.promise-line{gap:16px}.hero h1{padding:.045em 0 .08em}}
+@media(prefers-reduced-motion:reduce){.hero-word,.shelf-scene>svg,.promise-line span,.promise-line svg,.product-art>svg,.product-art:is(:hover,:focus-visible) .corner-label,.product:focus-within .product-art>svg{transform:none!important}.section-promise::before{clip-path:inset(0 100% 0 0)}}
+
+</style>
+</head>
+<body>
+<a class="skip" href="#main">Skip to content</a>
+<svg class="sprite" aria-hidden="true" xmlns="http://www.w3.org/2000/svg"><defs>
+<symbol id="arrow" viewBox="0 0 24 24"><path d="M4 12h15m-6-6 6 6-6 6" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></symbol>
+<symbol id="spark" viewBox="0 0 60 60"><path d="m30 0 6 18 18-8-8 18 14 5-18 7 6 17-18-9-13 12 1-20L0 35l17-9-5-18 15 12Z" fill="currentColor"/></symbol>
+<symbol id="truck" viewBox="0 0 700 430">
+<ellipse cx="357" cy="378" rx="267" ry="19" fill="#201b4a" opacity=".17"/>
+<path d="m130 152 35-26 360 2 31 54v151l-45 23H130Z" fill="#201b4a" stroke="#201b4a" stroke-width="7" stroke-linejoin="round"/>
+<path d="M138 173h363v151H138Z" fill="#32c3e0" stroke="#201b4a" stroke-width="6"/>
+<path d="m501 175 53 6v151l-53-8Z" fill="#2960ad" stroke="#201b4a" stroke-width="6"/>
+<path d="M139 281h363v46H139Z" fill="#ef3a24" stroke="#201b4a" stroke-width="6"/>
+<path d="M155 291h329v13H155" fill="#fcda00"/>
+<path d="M489 183h64l51 41v105h-115Z" fill="#5cba47" stroke="#201b4a" stroke-width="7" stroke-linejoin="round"/>
+<path d="m554 184 54 28 37 56v62h-42V224Z" fill="#fcda00" stroke="#201b4a" stroke-width="7" stroke-linejoin="round"/>
+<path d="M504 194h44l39 33v33h-83Z" fill="#fff" stroke="#201b4a" stroke-width="5" stroke-linejoin="round"/>
+<path d="m565 206 32 22 26 37h-23l-12-34Z" fill="#32c3e0" stroke="#201b4a" stroke-width="4"/>
+<path d="M504 268h85v49h-85Z" fill="#ef3a24" stroke="#201b4a" stroke-width="4"/><path d="M519 280h19" stroke="#fcda00" stroke-width="5" stroke-linecap="round"/>
+<path d="M133 325h514v21H133Z" fill="#fcda00" stroke="#201b4a" stroke-width="6" stroke-linejoin="round"/>
+<path d="M623 283h24v22h-24Z" fill="#fff" stroke="#201b4a" stroke-width="4"/>
+<path d="m616 314 29-1v14h-29" fill="#ef3a24"/>
+<g class="play-wheel"><circle cx="230" cy="338" r="49" fill="#201b4a"/><circle cx="230" cy="338" r="30" fill="#fff" stroke="#201b4a" stroke-width="4"/><circle cx="230" cy="338" r="11" fill="#ef3a24"/><path d="M230 313v10m0 30v10m-25-25h10m30 0h10" stroke="#2960ad" stroke-width="6" stroke-linecap="round"/></g>
+<g class="play-wheel"><circle cx="549" cy="338" r="49" fill="#201b4a"/><circle cx="549" cy="338" r="30" fill="#fff" stroke="#201b4a" stroke-width="4"/><circle cx="549" cy="338" r="11" fill="#ef3a24"/><path d="M549 313v10m0 30v10m-25-25h10m30 0h10" stroke="#2960ad" stroke-width="6" stroke-linecap="round"/></g>
+<g fill="#fcda00" stroke="#201b4a" stroke-width="4"><path d="M159 260v-41a31 31 0 0 1 62 0v41Z"/><path d="M232 260v-41a31 31 0 0 1 62 0v41Z"/><path d="M305 260v-41a31 31 0 0 1 62 0v41Z"/><path d="M378 260v-41a31 31 0 0 1 62 0v41Z"/></g>
+<g fill="#ef3a24"><circle cx="190" cy="219" r="15"/><circle cx="263" cy="219" r="15"/><circle cx="336" cy="219" r="15"/><circle cx="409" cy="219" r="15"/></g>
+<g stroke="#fff" fill="none" stroke-width="3"><path d="m178 219 24 0m-12-12v24m61-20 24 17m-24 0 24-17"/><circle cx="336" cy="219" r="8"/><path d="m409 208 4 8 9 3-9 3-4 8-4-8-9-3 9-3Z"/></g>
+<g class="make-roof"><path d="m116 167 30-42 348-2 49 41Z" fill="#fcda00" stroke="#201b4a" stroke-width="6" stroke-linejoin="round"/><path d="M116 166h386v24q-19 20-38 0-19 20-39 0-19 20-39 0-19 20-39 0-19 20-39 0-19 20-39 0-19 20-39 0-19 20-38 0-19 20-39 0Z" fill="#fff" stroke="#201b4a" stroke-width="5"/>
+<path d="m151 125-17 41h36l11-42m39 0-6 42h37l1-42m39 0 5 42h38l-10-42m38 0 16 42h38l-22-42m40 0 25 42h35l-29-42" fill="#ef3a24"/><path d="M138 167v23q18 17 36-1v-22m40 0v22q19 17 38 0v-22m41 0v22q19 17 38 0v-22m41 0v22q19 17 38 0v-22m40 0v22q18 17 36 0v-22" fill="#ef3a24"/>
+<path d="m494 123 48 41h-39l-21-40Z" fill="#5cba47" stroke="#201b4a" stroke-width="4"/>
+<path d="M255 91h143v42H255Z" fill="#2960ad" stroke="#201b4a" stroke-width="5" stroke-linejoin="round"/><text x="327" y="121" text-anchor="middle" fill="#fff" font-family="Arial,sans-serif" font-size="28" font-weight="900" letter-spacing="4">MELA</text><path d="m247 96 8 15-8 13m159-28-8 15 8 13" fill="#fcda00"/>
+</g>
+<path d="M171 321v-12m304 12v-12" stroke="#201b4a" stroke-width="4"/><g fill="#fff"><circle cx="158" cy="284" r="3"/><circle cx="479" cy="284" r="3"/></g>
+</symbol>
+<symbol id="ganesha" viewBox="0 0 480 490">
+<ellipse cx="240" cy="454" rx="165" ry="16" fill="#201b4a" opacity=".16"/>
+<path d="M80 435V159a160 160 0 0 1 320 0v276Z" fill="#2960ad" stroke="#201b4a" stroke-width="7"/>
+<path d="M104 414V167a136 136 0 0 1 272 0v247Z" fill="#32c3e0" stroke="#201b4a" stroke-width="5"/>
+<path d="M118 410V167a122 122 0 0 1 244 0v243Z" fill="#fff"/>
+<path d="M111 431h262v21H111Z" fill="#ef3a24" stroke="#201b4a" stroke-width="5"/>
+<path d="M87 115q18-19 37 0t37 0 37 0 37 0 37 0 37 0 37 0 37 0" fill="none" stroke="#fcda00" stroke-width="12"/>
+<path d="M92 123q19 36 38 0 18 36 37 0 18 36 37 0 18 36 37 0 18 36 37 0 18 36 37 0 18 36 37 0 18 36 37 0" fill="none" stroke="#ef3a24" stroke-width="6"/>
+<g stroke="#201b4a" stroke-width="5" stroke-linejoin="round"><path d="M149 377q-42-4-38-40 3-29 42-30l48 34m130 36q42-4 38-40-3-29-42-30l-48 34" fill="var(--figure,#fcda00)"/>
+<path d="M171 279q-9 25-38 27-32 3-31-22 3-28 23-24l7 13 21-18m156 24q9 25 38 27 32 3 31-22-3-28-23-24l-7 13-21-18" fill="var(--figure,#fcda00)"/>
+<path d="M180 266q-42 113 18 133h84q60-20 18-133Z" fill="var(--figure,#fcda00)"/>
+<path d="M202 176q-37-31-70-7-39 39 4 84 29 20 60-3m82-74q37-31 70-7 39 39-4 84-29 20-60-3" fill="#ef3a24"/>
+<path d="M190 184q-27-16-44 1-24 28 8 52 19 8 34-3m98-50q27-16 44 1 24 28-8 52-19 8-34-3" fill="#fcda00" stroke-width="3"/>
+<path d="M239 144q-58 0-55 65 1 39 37 48l-1 54q1 26 28 24 24-1 24-23 0-14-12-13 1 14-11 11l1-55q42-10 43-47 4-64-54-64Z" fill="var(--figure,#fcda00)"/>
+<path d="m189 164 4-54 26 17 21-31 22 31 27-17 2 54Z" fill="#ef3a24"/><path d="M193 152h96v16h-96Z" fill="#fcda00"/>
+<path d="m240 115 8 13-8 12-8-12Z" fill="#fff" stroke-width="2"/>
+<path d="M211 221q-16 13-27-1l8 30 20-8m56-21q16 13 27-1l-8 30-20-8" fill="#fff" stroke-width="3"/>
+<path d="M205 202q7-8 14 0m42 0q7-8 14 0" fill="none" stroke-linecap="round"/>
+<path d="M239 178v15" stroke="#ef3a24" stroke-width="5" stroke-linecap="round"/>
+<path d="M178 366q62 19 123 0l-7 31H185Z" fill="#ef3a24"/><path d="M225 373v25m31-25v25" fill="none" stroke="#fcda00" stroke-width="3"/>
+<path d="m164 404 28-24 22 26 26-29 25 29 23-26 28 24-9 19H173Z" fill="#5cba47"/>
+</g><g fill="#fcda00"><circle cx="120" cy="166" r="5"/><circle cx="360" cy="166" r="5"/><circle cx="119" cy="213" r="5"/><circle cx="361" cy="213" r="5"/><circle cx="119" cy="365" r="5"/><circle cx="361" cy="365" r="5"/></g>
+</symbol>
+<symbol id="paint-pot" viewBox="0 0 150 180"><path d="m30 49 9 105q33 23 71 0l10-105" fill="#fff" stroke="#201b4a" stroke-width="5"/><path d="m34 70 5 64q36 23 74 0l6-64" fill="#ef3a24"/><ellipse cx="75" cy="49" rx="46" ry="14" fill="#fcda00" stroke="#201b4a" stroke-width="5"/><path d="M47 66v15m48-17v24" stroke="#fcda00" stroke-width="9" stroke-linecap="round"/><path d="m94 44 12-39 14 3-13 41" fill="#5cba47" stroke="#201b4a" stroke-width="4"/><ellipse cx="75" cy="105" rx="21" ry="22" fill="#fff"/><path d="m76 89-9 17q-5 13 7 13t5-14Z" fill="#2960ad"/></symbol>
+<symbol id="paper-fan" viewBox="0 0 220 240"><path d="m106 203-12-26L22 73 57 40l34 21 10-44h46l9 37 34 1 14 44-78 81-5 25Z" fill="#fcda00" stroke="#201b4a" stroke-width="5" stroke-linejoin="round"/><path d="m109 182-52-142m54 142-10-165m14 165L147 17m-31 165 74-127m-83 124L22 73" stroke="#ef3a24" stroke-width="6"/><path d="m97 178 28 4-2 39-21 3Z" fill="#2960ad" stroke="#201b4a" stroke-width="5"/></symbol>
+</defs></svg>
+<div class="wrap"><header class="site-header">
+<a class="brand" href="#main" aria-label="Thinkadoo home"><img src="assets/thinkadoo-yellow.png" alt="Thinkadoo" width="1950" height="606"></a>
+<button class="menu-toggle" type="button" aria-expanded="false" aria-controls="site-nav">Menu <span aria-hidden="true">＋</span></button>
+<nav class="nav" id="site-nav" aria-label="Main navigation"><a href="#shop">Shop kits</a><a href="#workshops">Workshops</a><a href="#story">Our story</a><a class="nav-contact" href="#contact">Contact</a></nav>
+</header></div>
+<main id="main">
+<section class="hero" aria-labelledby="hero-title">
+<div class="hero-top"><h1 id="hero-title"><span class="hero-word line-one">Small hands.</span><span class="hero-word line-two">Big possibilities.</span></h1><p class="hero-intro">Craft kits and workshops for big imaginations.<br>A little less screen. A whole lot more doing.</p>
+<div class="mode-tabs" role="group" aria-label="Explore ways to create">
+<button class="mode-tab" data-mode="make" aria-pressed="true"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="m3 8 9-5 9 5v10l-9 5-9-5Zm0 0 9 5 9-5m-9 5v10" fill="none" stroke="currentColor" stroke-width="2" stroke-linejoin="round"/></svg>Make</button>
+<button class="mode-tab" data-mode="paint" aria-pressed="false"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="m7 16 9-12q2-2 4 0t0 3l-12 9M8 15q-6-2-5 7 8 0 7-5Z" fill="none" stroke="currentColor" stroke-width="2" stroke-linejoin="round"/></svg>Paint</button>
+<button class="mode-tab" data-mode="play" aria-pressed="false"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="m9 3 13 9-13 9Z" fill="none" stroke="currentColor" stroke-width="2" stroke-linejoin="round"/></svg>Play</button></div></div>
+<div class="shelf">
+<div class="shelf-scene" id="scene-make" role="img" aria-label="An illustrated colourful cardboard mela truck with craft paper, a paint pot and a folded fan">
+<svg viewBox="0 0 1160 360" aria-hidden="true">
+<g transform="translate(113 185) rotate(-8)"><g class="scene-prop"><path d="m-25 65 32-46 139 35-35 51Z" fill="#32c3e0" stroke="#201b4a" stroke-width="4"/><path d="m-9 55 16-66 102 27-6 80Z" fill="#fff" stroke="#201b4a" stroke-width="4"/><path d="m7 43 16-28 48 13-12 40Z" fill="#fcda00"/><path d="m85 47 17 6-8 30-18-6Z" fill="#5cba47"/><path d="m-5 84 9 2m12 3 9 2m12 3 9 2m12 3 9 2" stroke="#201b4a" stroke-width="3"/></g></g>
+<g class="scene-main scene-hit"><use href="#truck" x="277" y="-11" width="622" height="384"/></g>
+<g class="scene-prop later"><use href="#paper-fan" x="898" y="142" width="139" height="179"/></g>
+<g class="scene-prop"><use href="#paint-pot" x="196" y="220" width="86" height="103"/></g>
+</svg><span class="shelf-caption" aria-hidden="true">Start with<br>an idea.</span><span class="shelf-caption right-caption" aria-hidden="true">Make it<br>your own.</span>
+</div>
+<div class="shelf-scene" id="scene-paint" role="img" aria-label="An illustrated Ganesha craft in a colourful folded mantap, with a paintbrush and paint pots" hidden>
+<svg viewBox="0 0 1160 360" aria-hidden="true"><g class="scene-prop"><use href="#paint-pot" x="278" y="164" width="132" height="160"/></g><g class="scene-main"><use href="#ganesha" x="396" y="-14" width="362" height="370"/></g><g class="paint-brush"><path d="m804 293 62-190q5-13 15-9t6 18l-68 184Z" fill="#fcda00" stroke="#201b4a" stroke-width="5"/><path d="m804 293-4 21 14 4 8-22Z" fill="#fff" stroke="#201b4a" stroke-width="4"/><path d="M800 310q-22 17-19 32 28 4 35-26" fill="#ef3a24" stroke="#201b4a" stroke-width="4"/></g><g class="scene-prop later"><path d="m832 309 22-33 78 26-11 29Z" fill="#fff" stroke="#201b4a" stroke-width="4"/><ellipse cx="877" cy="308" rx="20" ry="8" fill="#5cba47"/></g></svg><span class="shelf-caption" aria-hidden="true">A colour<br>all your own.</span><span class="shelf-caption right-caption" aria-hidden="true">Try a<br>new shade!</span>
+</div>
+<div class="shelf-scene" id="scene-play" role="img" aria-label="An illustrated mela truck ready for imaginative play, surrounded by tiny fairground props" hidden>
+<svg viewBox="0 0 1160 360" aria-hidden="true"><g class="scene-prop"><path d="M180 298V91m112 207V111m-112-21q66 49 112 21" fill="none" stroke="#201b4a" stroke-width="5"/><path d="m183 93 11 32 17-18m2 2 12 33 19-20m2 1 17 29 12-27" fill="#fcda00" stroke="#201b4a" stroke-width="3"/><path d="M164 300h35m78 0h32" stroke="#201b4a" stroke-width="9" stroke-linecap="round"/></g><g class="play-truck"><use href="#truck" x="282" y="-5" width="600" height="372"/></g><g class="scene-prop later"><path d="M948 319V141m-30 178h60" stroke="#201b4a" stroke-width="7"/><circle cx="948" cy="181" r="54" fill="#fff" stroke="#201b4a" stroke-width="5"/><path d="M948 127v108m-54-54h108m-92-38 76 76m0-76-76 76" stroke="#ef3a24" stroke-width="8"/><circle cx="948" cy="181" r="13" fill="#fcda00" stroke="#201b4a" stroke-width="4"/></g></svg><span class="shelf-caption" aria-hidden="true">Where to<br>next?</span><span class="shelf-caption right-caption" aria-hidden="true">Your story.<br>Your rules.</span>
+</div>
+</div>
+<div class="hero-bottom"><p class="mode-summary" id="mode-summary" aria-live="polite"><strong>From flat pieces to “I made that!”</strong><br>Build a little world, one bright idea at a time.</p><a class="button" href="#shop">Find your next project <svg aria-hidden="true"><use href="#arrow"/></svg></a></div>
+<div class="paint-tools" id="paint-tools" hidden><span>Pick a colour</span><button class="swatch" data-color="#fcda00" style="--swatch:#fcda00" aria-label="Paint yellow" aria-pressed="true"></button><button class="swatch" data-color="#5cba47" style="--swatch:#5cba47" aria-label="Paint green" aria-pressed="false"></button><button class="swatch" data-color="#32c3e0" style="--swatch:#32c3e0" aria-label="Paint teal" aria-pressed="false"></button></div>
+</section>
+<section class="section-promise" aria-label="The Thinkadoo spirit"><div class="promise-line"><span>Big ideas welcome.</span><svg aria-hidden="true"><use href="#spark"/></svg><span>Mess encouraged.</span><svg class="promise-third" aria-hidden="true"><use href="#spark"/></svg><span class="promise-third">Made by you.</span></div></section>
+<section class="shop" id="shop" aria-labelledby="shop-title"><div class="wrap"><div class="section-head"><h2 id="shop-title">What will you<br>make of it?</h2><div><p>Open a kit. Follow your curiosity.<br>See where your hands take you.</p><div class="rail-controls"><button class="round-button" id="rail-prev" aria-label="Previous kit" disabled><svg style="transform:rotate(180deg)" aria-hidden="true"><use href="#arrow"/></svg></button><button class="round-button" id="rail-next" aria-label="Next kit"><svg aria-hidden="true"><use href="#arrow"/></svg></button></div></div></div>
+<div class="product-rail" id="product-rail" aria-label="Explore the kits" tabindex="0">
+<article class="product"><button class="product-art" data-product="mela" aria-label="Explore The Great Indian Mela Truck"><span class="product-word" aria-hidden="true">ROLL<br>WITH IT.</span><svg viewBox="0 0 760 440" aria-hidden="true"><use href="#truck" x="55" y="0" width="685" height="421"/></svg><span class="corner-label" aria-hidden="true">Build.<br>Decorate.<br>Play.</span></button><div class="product-info"><div><h3>The Great Indian<br>Mela Truck</h3><p>A make-it-yourself fair, ready for a little adventure.</p></div><button class="text-button" data-product="mela">Explore kit <svg aria-hidden="true"><use href="#arrow"/></svg></button></div></article>
+<article class="product"><button class="product-art" data-product="ganesha" aria-label="Explore Paint My God"><span class="product-word" aria-hidden="true">COLOUR<br>YOUR WAY.</span><svg viewBox="0 0 700 440" aria-hidden="true"><use href="#ganesha" x="153" y="-5" width="426" height="435"/></svg><span class="corner-label" aria-hidden="true">A little<br>colour.<br>A big story.</span></button><div class="product-info"><div><h3>Paint My God</h3><p>Your colours, your Ganesha, your little mantap.</p></div><button class="text-button" data-product="ganesha">Explore kit <svg aria-hidden="true"><use href="#arrow"/></svg></button></div></article>
+</div></div></section>
+<section class="workshops" id="workshops" aria-labelledby="workshop-title"><div class="wrap"><div class="workshop-inner"><div class="workshop-copy"><span class="club-note">More hands. More happy accidents.</span><h2 id="workshop-title">Come make<br>some happy.</h2><p>There’s something about making together. New ideas, colourful tables, and that lovely moment when a little imagination becomes a real thing.</p><button class="button dark" data-workshop>Explore workshops <svg aria-hidden="true"><use href="#arrow"/></svg></button></div>
+<div class="club-art" aria-hidden="true"><svg viewBox="0 0 550 530"><path d="M52 81q215-65 447 22l-22 372Q271 496 51 450Z" fill="#fcda00" stroke="#201b4a" stroke-width="6"/>
+<path d="m37 113 13-44 102-20 7 28-101 22m329-14 13-27 108 24-5 31" fill="#fff" stroke="#201b4a" stroke-width="4"/>
+<text x="275" y="176" text-anchor="middle" font-family="Fredoka,Arial,sans-serif" fill="#201b4a" font-size="69" font-weight="600" transform="rotate(3 275 176)">THE DOING</text><text x="275" y="245" text-anchor="middle" font-family="Fredoka,Arial,sans-serif" fill="#201b4a" font-size="84" font-weight="600" transform="rotate(-3 275 245)">CLUB</text>
+<g class="craft-center" style="transform-origin:50% 70%"><path d="m204 312 63-33 92 29-9 90-76 34-72-36Z" fill="#ef3a24" stroke="#201b4a" stroke-width="5"/><path d="m204 312 72 26 83-30m-83 30-2 94" fill="none" stroke="#201b4a" stroke-width="5"/><path d="m227 300 73 27 30-10-70-26" fill="#fff"/><path d="m301 328-1 32 26-11 4-32" fill="#fff"/><path d="m276 338-28-3-28 12-16-35m72 26 23 12 50-16 10-26" fill="#fcda00" stroke="#201b4a" stroke-width="4"/></g>
+<g class="hand-left"><path d="m-4 361 49-16 62 31 45-18 11-35q7-15 18-11 14 5 4 23l-8 16 22-4q19 0 19 12-1 12-23 15l-27 20q-31 21-57 16L4 391Z" fill="#fff" stroke="#201b4a" stroke-width="5" stroke-linejoin="round"/><path d="m4 355 52-14 17 68-69 9" fill="#2960ad" stroke="#201b4a" stroke-width="5"/><path d="m34 350 16 63" stroke="#32c3e0" stroke-width="9"/></g>
+<g class="hand-right"><path d="m555 281-45-9-55 40-49 3-9-31q-7-18-20-14-10 4-4 24l6 16-23 5q-19 5-15 17 4 12 27 7l30 10q26 10 51-2l106-39Z" fill="#fff" stroke="#201b4a" stroke-width="5" stroke-linejoin="round"/><path d="m555 268-54 2 11 69 43-13" fill="#ef3a24" stroke="#201b4a" stroke-width="5"/><path d="m526 271 9 61" stroke="#fcda00" stroke-width="9"/></g>
+<path d="m203 451 15 14m16-9 9 16m14-13 2 17m25-16-5 16" fill="none" stroke="#201b4a" stroke-width="4" stroke-linecap="round"/><path d="m116 262 4 15 16 4-16 5-4 17-5-17-16-5 16-4Zm292-24 4 15 16 4-16 5-4 17-5-17-16-5 16-4Z" fill="#2960ad"/>
+</svg></div></div><div class="workshop-foot"><p>For the joy of trying, getting a little messy, and making something that’s yours.</p><a class="text-button" href="#story">Meet Thinkadoo <svg aria-hidden="true"><use href="#arrow"/></svg></a></div></div></section>
+<section class="story" id="story" aria-labelledby="story-title"><div class="wrap"><div class="story-top"><h2 id="story-title">A world of ideas.<br><em>Made by you.</em></h2><div class="story-copy"><p>We believe imagination likes to get its hands dirty. To fold a piece of paper. Try a different colour. Turn “what if?” into something you can hold.</p><p>Thinkadoo brings art and creative discovery into screen-free craft kits and workshops. Room to explore. Things to make. And plenty of possibilities along the way.</p></div></div><div class="story-line"><span>A little wonder.</span><svg aria-hidden="true"><use href="#spark"/></svg><span>A lot of doing.</span><svg class="story-last" aria-hidden="true"><use href="#spark"/></svg><span class="story-last">That’s Thinkadoo.</span></div></div></section>
+</main>
+<footer class="site-footer" id="contact"><div class="wrap"><div class="footer-top"><div class="footer-brand"><a href="#main" aria-label="Back to Thinkadoo home"><img src="assets/thinkadoo-yellow.png" alt="Thinkadoo" width="1950" height="606"></a><p>For curious minds, colourful tables<br>and the things we haven’t imagined yet.</p></div><nav class="footer-links" aria-label="Footer navigation"><a href="#shop">Shop kits</a><button data-info="contact">Get in touch ↗</button><a href="#workshops">Workshops</a><button data-info="shipping">Shipping & returns</button><a href="#story">Our story</a><button data-info="faq">Questions & answers</button><button data-info="partners">Schools & partners</button><button data-info="privacy">Privacy</button></nav></div><div class="footer-bottom"><p>© Thinkadoo · A little imagination goes a long way.</p><p>Design exploration · The Playroom</p></div></div></footer>
+<aside class="prototype-controls" aria-label="Concept review controls"><a href="index.html">← All concepts</a><button id="motion-toggle" aria-pressed="true"><span class="motion-dot" aria-hidden="true"></span>Motion on</button></aside>
+<dialog class="dialog" id="preview-dialog" aria-labelledby="dialog-title"><div class="dialog-header"><span id="dialog-kind">Kit preview</span><button class="dialog-close" aria-label="Close preview">×</button></div><div class="dialog-body" id="dialog-body"></div></dialog>
+<noscript><p class="noscript-message">You can explore the page without JavaScript. Enable it to try the shelf, kit previews and workshop choices.</p></noscript>
+<script>
+(() => {
+  document.body.classList.add('js');
+  const motionPreference = matchMedia('(prefers-reduced-motion: reduce)');
+  let motionEnabled = !motionPreference.matches;
+  let refreshDynamics = () => {};
+  const motionButton = document.querySelector('#motion-toggle');
+  const syncMotion = () => {
+    document.documentElement.classList.toggle('motion-off', !motionEnabled);
+    motionButton.setAttribute('aria-pressed', String(motionEnabled));
+    motionButton.innerHTML = '<span class="motion-dot" aria-hidden="true"></span>Motion ' + (motionEnabled ? 'on' : 'off');
+    motionButton.title = motionPreference.matches ? 'Motion is off to follow your device’s reduced-motion setting.' : 'Turn decorative animation and scroll effects on or off';
+    refreshDynamics();
+  };
+  syncMotion();
+  motionButton.addEventListener('click', () => { motionEnabled = motionPreference.matches ? false : !motionEnabled; syncMotion(); });
+  motionPreference.addEventListener('change', event => { motionEnabled = !event.matches; syncMotion(); });
+  const menu = document.querySelector('.menu-toggle');
+  const nav = document.querySelector('#site-nav');
+  menu.addEventListener('click', () => { const open = menu.getAttribute('aria-expanded') !== 'true'; menu.setAttribute('aria-expanded', String(open)); nav.classList.toggle('is-open', open); menu.innerHTML = open ? 'Close <span aria-hidden="true">−</span>' : 'Menu <span aria-hidden="true">＋</span>'; });
+  nav.querySelectorAll('a').forEach(link => link.addEventListener('click', () => { menu.setAttribute('aria-expanded', 'false'); nav.classList.remove('is-open'); menu.innerHTML = 'Menu <span aria-hidden="true">＋</span>'; }));
+  const descriptions = {
+    make: '<strong>From flat pieces to “I made that!”</strong><br>Build a little world, one bright idea at a time.',
+    paint: '<strong>There’s no one way to colour a story.</strong><br>Pick a shade below and make it yours.',
+    play: '<strong>The making is just the beginning.</strong><br>Let a little truck take your imagination somewhere.'
+  };
+  const modeButtons = [...document.querySelectorAll('[data-mode]')];
+  function chooseMode(mode) {
+    modeButtons.forEach(button => button.setAttribute('aria-pressed', String(button.dataset.mode === mode)));
+    document.querySelectorAll('.shelf-scene').forEach(scene => { scene.hidden = scene.id !== 'scene-' + mode; });
+    document.querySelector('#mode-summary').innerHTML = descriptions[mode];
+    document.querySelector('#paint-tools').hidden = mode !== 'paint';
+  }
+  modeButtons.forEach(button => button.addEventListener('click', () => chooseMode(button.dataset.mode)));
+  document.querySelectorAll('.swatch').forEach(button => button.addEventListener('click', () => {
+    document.documentElement.style.setProperty('--figure', button.dataset.color);
+    document.querySelectorAll('.swatch').forEach(swatch => swatch.setAttribute('aria-pressed', String(swatch === button)));
+  }));
+  const rail = document.querySelector('#product-rail');
+  const previous = document.querySelector('#rail-prev');
+  const next = document.querySelector('#rail-next');
+  const updateRail = () => { previous.disabled = rail.scrollLeft < 5; next.disabled = rail.scrollLeft >= rail.scrollWidth - rail.clientWidth - 5; };
+  const moveRail = direction => rail.scrollBy({left: direction * (rail.querySelector('.product').getBoundingClientRect().width + parseFloat(getComputedStyle(rail).gap)), behavior:motionEnabled ? 'smooth' : 'instant'});
+  previous.addEventListener('click', () => moveRail(-1)); next.addEventListener('click', () => moveRail(1));
+  rail.addEventListener('scroll', updateRail, {passive:true}); window.addEventListener('resize', updateRail); updateRail();
+  // Natural scroll and pointer events share one bounded animation frame.
+  const hero = document.querySelector('.hero');
+  const shelf = document.querySelector('.shelf');
+  const band = document.querySelector('.section-promise');
+  const shop = document.querySelector('.shop');
+  const railArt = [...document.querySelectorAll('.product-art')];
+  const finePointer = matchMedia('(hover: hover) and (pointer: fine)');
+  let pendingFrame = 0;
+  let pointerX = 0;
+  let pointerY = 0;
+  let shelfActive = false;
+  const clamp = (value, low, high) => Math.max(low, Math.min(high, value));
+  function resetDynamics() {
+    hero.style.removeProperty('--hero-shift');
+    ['--shelf-y','--shelf-x','--shelf-lift'].forEach(property => shelf.style.removeProperty(property));
+    ['--band-wipe','--band-shift','--band-turn'].forEach(property => band.style.removeProperty(property));
+    railArt.forEach(art => { art.style.removeProperty('--rail-y'); art.style.removeProperty('--rail-angle'); });
+  }
+  function renderDynamics() {
+    pendingFrame = 0;
+    if (!motionEnabled || document.hidden) { resetDynamics(); return; }
+    const viewport = window.innerHeight;
+    const mobile = window.innerWidth <= 650;
+    const heroRect = hero.getBoundingClientRect();
+    if (heroRect.bottom > 0 && heroRect.top < viewport) {
+      const travel = clamp(-heroRect.top / Math.max(heroRect.height * .7, 1), 0, 1);
+      hero.style.setProperty('--hero-shift', (travel * (mobile ? 14 : 48)).toFixed(2) + 'px');
+      shelf.style.setProperty('--shelf-y', (shelfActive ? pointerX * 3.3 : 0).toFixed(2) + 'deg');
+      shelf.style.setProperty('--shelf-x', (shelfActive ? pointerY * -2 : 0).toFixed(2) + 'deg');
+      shelf.style.setProperty('--shelf-lift', (shelfActive ? -8 : 0) + 'px');
+    }
+    const bandRect = band.getBoundingClientRect();
+    if (bandRect.bottom > 0 && bandRect.top < viewport) {
+      const progress = clamp((viewport * .91 - bandRect.top) / (viewport * .65), 0, 1);
+      band.style.setProperty('--band-wipe', (progress * 100).toFixed(2) + '%');
+      band.style.setProperty('--band-shift', ((progress - .5) * (mobile ? 12 : 32)).toFixed(2) + 'px');
+      band.style.setProperty('--band-turn', (progress * 70).toFixed(2) + 'deg');
+    }
+    const shopRect = shop.getBoundingClientRect();
+    if (shopRect.bottom > 0 && shopRect.top < viewport) {
+      const artRect = rail.getBoundingClientRect();
+      const remaining = 1 - clamp((viewport * .97 - artRect.top) / (viewport * .5), 0, 1);
+      railArt.forEach((art,index) => { art.style.setProperty('--rail-y', (remaining * (mobile ? 22 : 42)).toFixed(2) + 'px'); art.style.setProperty('--rail-angle', (remaining * (index ? 7 : -6)).toFixed(2) + 'deg'); });
+    }
+  }
+  function queueDynamics() { if (!pendingFrame && motionEnabled && !document.hidden) pendingFrame = requestAnimationFrame(renderDynamics); }
+  refreshDynamics = () => { if (!motionEnabled) { cancelAnimationFrame(pendingFrame); pendingFrame = 0; shelfActive = false; resetDynamics(); } else queueDynamics(); };
+  window.addEventListener('scroll', queueDynamics, {passive:true});
+  window.addEventListener('resize', queueDynamics);
+  document.addEventListener('visibilitychange', refreshDynamics);
+  shelf.addEventListener('pointermove', event => {
+    if (!motionEnabled || !finePointer.matches || event.pointerType === 'touch') return;
+    const bounds = shelf.getBoundingClientRect();
+    pointerX = clamp((event.clientX - bounds.left) / bounds.width * 2 - 1, -1, 1);
+    pointerY = clamp((event.clientY - bounds.top) / bounds.height * 2 - 1, -1, 1);
+    shelfActive = true; queueDynamics();
+  }, {passive:true});
+  shelf.addEventListener('pointerleave', () => { shelfActive = false; queueDynamics(); });
+  document.querySelector('.mode-tabs').addEventListener('focusin', event => {
+    if (!motionEnabled) return;
+    const position = modeButtons.indexOf(event.target);
+    pointerX = (position - 1) * .6; pointerY = -.35; shelfActive = true; queueDynamics();
+  });
+  document.querySelector('.mode-tabs').addEventListener('focusout', () => { shelfActive = false; queueDynamics(); });
+  modeButtons.forEach(button => button.addEventListener('click', queueDynamics));
+  refreshDynamics();
+  const artObserver = new IntersectionObserver(entries => entries.forEach(entry => { if(entry.isIntersecting) { entry.target.classList.add('in-view'); artObserver.unobserve(entry.target); } }), {threshold:.35});
+  artObserver.observe(document.querySelector('.club-art'));
+  const dialog = document.querySelector('#preview-dialog');
+  const dialogBody = document.querySelector('#dialog-body');
+  const dialogKind = document.querySelector('#dialog-kind');
+  let opener = null;
+  function openDialog(kind, content, source) { opener = source; dialogKind.textContent = kind; dialogBody.innerHTML = content; dialog.showModal(); }
+  function closeDialog() { dialog.close(); }
+  document.querySelector('.dialog-close').addEventListener('click', closeDialog);
+  dialog.addEventListener('click', event => { if(event.target === dialog) { const rect = dialog.getBoundingClientRect(); if(event.clientX < rect.left || event.clientX > rect.right || event.clientY < rect.top || event.clientY > rect.bottom) closeDialog(); } });
+  dialog.addEventListener('close', () => { if(opener && document.contains(opener)) opener.focus({preventScroll:true}); });
+  const products = {
+    mela: {title:'The Great Indian Mela Truck',symbol:'truck',viewBox:'0 0 700 430',text:'Build a colourful truck, decorate it your way, then bring a little mela to life. The example kit combines building the truck with six mela activities. A small world with lots of room for imagination.'},
+    ganesha: {title:'Paint My God',symbol:'ganesha',viewBox:'0 0 480 490',text:'Give Ganesha your own colourful touch, then fold the packaging into a little mantap. An invitation to paint, make and tell a story in your own way.'}
+  };
+  const checkoutNote = '<div class="checkout-note"><p><strong>Checkout is unavailable in this design preview.</strong> No purchase or reservation will be made.</p><button type="button" disabled>Checkout unavailable</button></div>';
+  document.querySelectorAll('[data-product]').forEach(button => button.addEventListener('click', () => {
+    const product = products[button.dataset.product];
+    const symbolReference = '#' + product.symbol;
+    openDialog('Kit preview', '<div class="dialog-content"><div class="dialog-art"><svg viewBox="'+product.viewBox+'" role="img" aria-label="Concept illustration of '+product.title+'"><use href="'+symbolReference+'"/></svg></div><div><h2 id="dialog-title">'+product.title+'</h2><p>'+product.text+'</p><p class="preview-note">Concept illustration. Kit descriptions and illustrated contents are provisional; final details are still to be confirmed.</p></div></div>'+checkoutNote, button);
+  }));
+  document.querySelectorAll('[data-workshop]').forEach(button => button.addEventListener('click', () => {
+    openDialog('Workshop format preview', '<h2 id="dialog-title">What shall we make?</h2><p>Explore two sample activities for a Thinkadoo workshop. These are format previews, not scheduled sessions or bookable inventory.</p><fieldset style="border:0;padding:0;margin:0"><legend style="font-weight:700;margin-top:22px">Choose a sample activity</legend><div class="workshop-options"><label class="workshop-option"><input type="radio" name="workshop" value="mela" checked>Mela makers<span>Build, decorate and imagine a little fair.</span></label><label class="workshop-option"><input type="radio" name="workshop" value="paint">Paint and tell<span>Explore colours and the stories they start.</span></label></div></fieldset><p class="workshop-choice" id="workshop-choice" aria-live="polite">Mela makers selected — a sample making-and-play activity.</p><p class="preview-note">Dates, locations, ages, pricing and availability have not been confirmed.</p>'+checkoutNote, button);
+    dialogBody.querySelectorAll('[name="workshop"]').forEach(input => input.addEventListener('change', () => { document.querySelector('#workshop-choice').textContent = input.value === 'mela' ? 'Mela makers selected — a sample making-and-play activity.' : 'Paint and tell selected — a sample colour-and-story activity.'; }));
+  }));
+  const information = {
+    contact: ['Let’s get in touch.', 'This is a visual concept for Thinkadoo. Contact details have not been supplied yet, so there is no message form or email address in this preview.', 'The final website will provide a clear way to contact the team.'],
+    shipping: ['Shipping & returns', 'Shipping and return policies have not been confirmed. This preview does not sell or ship products.', 'The final store will explain delivery options and return terms before checkout.'],
+    faq: ['A few good questions.', 'What’s in each kit? What age is it for? When can we join a workshop? These are the practical details the final website needs to answer.', 'Kit specifications, ages and workshop schedules are still to be confirmed. You can explore the provisional kit illustrations and sample workshop formats here.'],
+    partners: ['More room to make.', 'Schools and partners are a possible part of the Thinkadoo experience. Partnership formats and contact details are still to be confirmed.', 'This concept does not submit an enquiry or collect personal information.'],
+    privacy: ['Privacy in this preview', 'This concept has no forms that collect personal details and creates no orders or bookings. Interactions only change what you see on this page.', 'The final website’s privacy policy will depend on the services selected for it. Google Fonts may load the display fonts when you are online.']
+  };
+  document.querySelectorAll('[data-info]').forEach(button => button.addEventListener('click', () => {
+    const info = information[button.dataset.info];
+    openDialog('Information preview','<div class="legal-copy"><h2 id="dialog-title">'+info[0]+'</h2><p>'+info[1]+'</p><p>'+info[2]+'</p></div>',button);
+  }));
+})();
+</script>
+</body>
+</html>
