@@ -3,11 +3,12 @@ import vm from 'node:vm';
 import path from 'node:path';
 import { fileURLToPath } from 'node:url';
 
-const names = ['01-makers-table.html', '02-playroom.html', '03-craft-journal.html', '04-paper-theatre.html'];
+const requested = process.argv.slice(2);
+const names = requested.length ? requested : ['01-makers-table.html', '02-playroom.html', '03-craft-journal.html', '04-paper-theatre.html'];
 const base = path.dirname(fileURLToPath(import.meta.url));
 let errors = 0;
 for (const name of names) {
-  const file = path.join(base, name);
+  const file = requested.length ? path.resolve(name) : path.join(base, name);
   if (!fs.existsSync(file)) { console.error(`${name}: missing`); errors++; continue; }
   const html = fs.readFileSync(file, 'utf8');
   const checks = [

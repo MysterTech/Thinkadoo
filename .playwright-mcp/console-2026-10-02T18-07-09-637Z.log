@@ -1,0 +1,5 @@
+[  136424ms] [WARNING] Swiper Loop Warning: The number of slides is not enough for loop mode, it will be disabled or not function properly. You need to add more slides (or make duplicates) or lower the values of slidesPerView and slidesPerGroup parameters @ https://poptasticpop.com/cdn/shop/t/21/assets/main.js?v=74584725090648191291778704988:1
+[  136592ms] [INFO] Run helper.... @ https://cdn.shopify.com/extensions/01a0f807-168f-7fcf-a3d0-e91e9a539d12/pagefly-ai-page-builder-363/assets/pagefly-general-helper.js:0
+[  136596ms] [LOG] productATCs [] @ https://cdn.shopify.com/extensions/01a0f807-168f-7fcf-a3d0-e91e9a539d12/pagefly-ai-page-builder-363/assets/pagefly-product.js:4
+[  136612ms] [LOG] bootstap @ https://cdn.shopify.com/extensions/01a0f67a-6bde-7e6e-8063-5c7af30ffe0e/gift-box-builder-1-472/assets/easy-bundle-min.js:0
+[  136617ms] [LOG] Script loaded successfully: https://cdn.shopify.com/extensions/01a0f807-168f-7fcf-a3d0-e91e9a539d12/pagefly-ai-page-builder-363/assets/pagefly-htmlvideo2.js @ https://cdn.shopify.com/extensions/01a0f807-168f-7fcf-a3d0-e91e9a539d12/pagefly-ai-page-builder-363/assets/pagefly-general-helper.js:0

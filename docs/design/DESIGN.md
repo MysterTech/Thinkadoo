@@ -13,6 +13,12 @@ colors:
 
 # Design System: Thinkadoo exploration
 
+## Current exploration — 2 October2026
+
+The newest motion-led review set is governed by docs/design/2026-10-02-motion-concepts.md and docs/research/2026-10-02-source-refresh.md. Four new worlds: Unbox a little universe (yellow/red packaging), Type is a toy (red kinetic poster), A world in a fold (cobalt paper geometry), and The print club (teal print studio). ui-ux-designer and impeccable inform full flow/state coverage and craft critique. Primary actions remain stable; substantial scroll transforms change depicted materials, type and section boundaries. Source identity stays fixed. No world is selected for production; previous sets remain intact.
+
+The active request is a NEW four-concept set governed by docs/design/2026-10-02-four-new-concepts.md and the complete new Website Content snapshot. Its worlds are The Wonder Wheel (Lilita One/DM Sans, yellow/red), Little Big Studio (Space Grotesk/Manrope, teal), The Storybook (Grandstander/Nunito Sans, paper/navy), and The Colour Parade (Unbounded/Archivo, red/cobalt). Source primitives, actual logos, controllable motion and clear customer journeys remain. The four directions described below record the earlier set, which remains preserved under docs/concepts and is not the current build contract.
+
 ## Overview
 
 The supplied identity is confident, physical and irregular: a jagged outlined wordmark, stars, saturated colours, and an invitation to make. Four worlds are being explored; none is selected for production. The source contract lives in website-concepts.md. Mode for all four homepages: Persuade, with optional moments of Experience.

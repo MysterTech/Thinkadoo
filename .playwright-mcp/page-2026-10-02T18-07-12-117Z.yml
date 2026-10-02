@@ -1,0 +1,160 @@
+- generic [ref=e3]:
+  - banner [ref=e4]:
+    - generic [ref=e5]:
+      - link [ref=e6] [cursor=pointer]:
+        - /url: https://www.kinder-und-klinik.de
+        - img "Kinder Praxis & Klinik" [ref=e7]
+      - link "Jetzt Termin vereinbaren" [ref=e9] [cursor=pointer]:
+        - /url: https://web.online-tis.de/117015Yb6M/neuer-termin
+  - main [ref=e10]:
+    - generic [ref=e26]:
+      - heading [level=1] [ref=e27]:
+        - strong [ref=e28]: Deine Kinderzahnärzte in Böblingen
+      - heading [level=2] [ref=e29]:
+        - strong [ref=e30]: Die Experten für kleine und große Zähne
+      - paragraph [ref=e31]: Herzlich Willkommen in der KINDER Praxis & Klinik für Zahnheilkunde im Zentrum Böblingens. In unserer liebevoll und kindgerecht gestalteten Praxis stehen die kleinsten, kleinen und mittelgroßen Patientinnen und Patienten im Mittelpunkt. Unser langjährig erfahrenes Ärzteteam ist darauf spezialisiert, Kleinkinder und Teenager an angstfreie Besuche und damit positive Zahnarzt Erlebnisse heranzuführen.
+      - paragraph [ref=e32]: Wir glauben daran, dass gesunde Zähne bei einem ebenso gesunden Verhältnis zum regelmäßigen Zahnarztbesuch beginnen. Deshalb setzt unser auf Kinderzahnheilkunde spezialisiertes Team auf eine gleichermaßen professionelle wie offene, einfühlsame und freundliche Kommunikation in kindgerechter Atmosphäre. Erfahren Sie mehr über unser zahnmedizinisches Leistungsspektrum, das Team vor Ort und die Behandlungsschwerpunkte in unserer KINDER Klinik und Praxis in Böblingen direkt neben Sindelfingen.
+    - generic [ref=e52]:
+      - generic [ref=e53]:
+        - heading [level=2] [ref=e54]:
+          - strong [ref=e55]: Unser zahnmedizinisches Leistungsspektrum für Kids & Teens
+        - paragraph [ref=e56]: Kinder sind keine kleinen Erwachsenen, sie sehen die Welt mit anderen Augen – das gilt natürlich auch für zahnmedizinische Behandlungen. Unser Team, bestehend aus erfahrenen Kinderzahnärztinnen und Ärzten, Zahnarzthelferinnen und Helfern sowie Prophylaxe-Spezialistinnen und -Spezialisten, hat sich zum Ziel gesetzt, jedem Kind und Teenager die bestmögliche Betreuung zu bieten.
+        - paragraph [ref=e57]: "Mit viel Geduld und Einfühlungsvermögen erklären wir unseren jungen Patientinnen und Patienten spielerisch die einzelnen Behandlungsschritte, beraten die begleitenden Eltern entsprechend und nehmen uns die Zeit, die es braucht, um auf die individuellen Persönlichkeiten einzugehen. Gemeinsam arbeiten wir in einer freundlichen Atmosphäre daran, den Kleinsten ab dem ersten Milchzahn das Größte zu bieten: eine unbeschwerte Zeit, ein gesundes Verhältnis zum Zahnarztbesuch und ein strahlend schönes Lachen!"
+      - generic [ref=e59]:
+        - generic [ref=e60]:
+          - heading "Früh übt sich!" [level=3] [ref=e61]
+          - paragraph [ref=e62]: Wir empfehlen den ersten Zahnarztbesuch ab dem ersten Zahn. Neben dem gegenseitigen Kennenlernen und dem Aufbau eines vertrauensvollen Verhältnisses zwischen unserem Ärzteteam und den kleinen Patienten geht es vor allem um das Erkennen erster Risikofaktoren. Die Beratung der Eltern sowie das Herantasten an einen spielerischen Umgang mit der eigenen Zahnhygiene werden durch dieses behutsame und kindgerechte Vorgehen unterstützt. Sodass eine Zahnarztangst im besten Fall erst gar nicht aufkommt.
+        - generic [ref=e63]:
+          - heading "Kinderprophylaxe" [level=3] [ref=e64]
+          - paragraph [ref=e65]: Die gesetzliche Krankenkasse übernimmt bei Kindern ab 6 Jahren zwei Mal im Jahr eine professionelle Zahnreinigung - schon gewusst? Gemeinsam mit den Kindern üben wir spielerisch Zahnputztechniken und tasten uns an das Thema Mundhygiene heran. Der frühe Start dieser zahnmedizinischen Prophylaxe Behandlungen in unserer Praxis hilft Kindern und Teenagern dabei, einen routinierten Umgang mit der Ergänzung der häuslichen Zahnpflege zu etablieren.
+        - generic [ref=e66]:
+          - heading "Kariesbehandlungen & Füllungen" [level=3] [ref=e67]
+          - paragraph [ref=e68]: Schmerzfrei und schonend – so behandeln wir die kariösen Zähne von Kindern und Jugendlichen, denen entsprechend geholfen werden muss. Dabei kommen modernste Füllungsmaterialien wie zahnfarbene Kunststoffkeramikfüllungen und individuelle Behandlungskonzepte zum Einsatz, die die individuelle Situation der Kinder berücksichtigen und auf sie eingehen.
+        - generic [ref=e69]:
+          - heading "Milchzahnkronen" [level=3] [ref=e70]
+          - paragraph [ref=e71]: Sind Milchzähne extrem angegriffen, können Milchzahnkronen einen vorzeitigen Verlust verhindern. Milchzähne sind als Platzhalter für die bleibenden Zähne enorm wichtig und spielen eine große Rolle, was die anhaltende Zahngesundheit angeht. Sollte wegen starkem Kariesbefall ein Milchzahnverlust drohen, kümmern wir uns um die Überkronung der betroffenen Milchzähne und sorgen dank Lokalanästhetika auch hier für eine schmerzfreie Behandlung.
+        - generic [ref=e72]:
+          - heading "Vollnarkosen" [level=3] [ref=e73]
+          - paragraph [ref=e74]: Haben Kinder und Jugendliche große Angst vor einer zahnchirurgischen Behandlung oder leiden sie unter starken, kariösen Entzündungen, bieten wir in unserer Praxis und Klinik die Option der Vollnarkose an. Unser erfahrenes Experten- und Anästhesieteam übernimmt dabei die Betreuung. Vor allem bei geistig oder körperlich behinderten, jungen Patienten hilft die beruhigende Atmosphäre und schmerzfreie Behandlung dank Narkose.
+        - generic [ref=e75]:
+          - heading "Zahnunfälle" [level=3] [ref=e76]
+          - paragraph [ref=e77]: Kinder entdecken und rennen durch die Welt - dabei kann es schnell passieren – man stürzt und verletzt sich die Zähne. Am häufigsten sind dabei die vorderen Schneidezähne betroffen. Statistisch gesehen erleidet jedes dritte Kind bis zur Vollendung des 16. Lebensjahres einen Zahnunfall. Nach einem Zahntrauma ist die adäquate Erstversorgung entscheidend für den späteren Heilungsprozess. Darum vergeben wir in solchen dringenden Fällen zeitnah Termine und betreuen Kinder und Teenager je nach Vorfall, Vorgeschichte und Möglichkeiten stets individuell und situativ.
+        - generic [ref=e78] [cursor=pointer]
+    - generic [ref=e99]:
+      - generic [ref=e100]:
+        - generic [ref=e102]:
+          - heading [level=2] [ref=e103]:
+            - strong [ref=e104]: "Ab den ersten Milchzähnen: unsere Praxis für Kleinkinder."
+          - paragraph [ref=e105]: Die Untersuchungen und Behandlungen beginnen in dem Alter, in dem die Kleinsten bereits den ersten Milchzahn haben. Neben der Ernährungsberatung, die wir unseren kleinen Patientinnen und Patienten sowie den Eltern, gerne näher bringen, erklären wir auf kindgerechte Art und Weise, welche Lebensmittel gut für die Zahngesundheit sind und welche nicht. Wir sprechen über gesunde Alternativen, befassen uns spielerisch mit den täglichen Zahnhygieneroutinen und gestalten gemeinsam mit Ihnen als Eltern ein auf das Kind abgestimmtes Vorsorgeprogramm.
+          - paragraph [ref=e106]: Zusammen nehmen wir den kleinsten Kindern so die Angst vor dem Zahnarztbesuch und beginnen im frühesten Alter damit, Vertrauen sowie einen gesunden Umgang mit dem Besuch in unserer Praxis aufzubauen. Neben der Ernährungsberatung, dem spielerischen Erlernen von effektiven Putztechniken und täglichen Zahnpflege bieten wir außerdem Schnullerberatungen an.
+        - figure [ref=e109]:
+          - img "Kleinkinder" [ref=e110]
+      - generic [ref=e111]:
+        - figure [ref=e114]:
+          - img "Teenager" [ref=e115]
+        - generic [ref=e117]:
+          - heading [level=2] [ref=e118]:
+            - strong [ref=e119]: Für Jugendliche und Zähne, die lange gesund bleiben.
+          - paragraph [ref=e120]: Für Teenager und Jugendliche passen wir die Behandlungen entsprechend dem Alter an und setzen auf eine unbeschwerte Atmosphäre, in der man sich wohlfühlt. Dabei umfasst unser Behandlungsspektrum alle Aspekte der modernen Kinderzahnheilkunde, wie Kariesrisikobestimmung und Kariesfrüherkennung mittels moderner Diagnostikverfahren.
+          - paragraph [ref=e121]: Dank modernsten therapeutischen Methoden und einem auf das Alter und Kariesrisiko der Teenager abgestimmtes Vorsorgeprogramm unterstützen wir unsere jugendlichen Patientinnen und Patienten dabei, einen gesunden und angstfreien Umgang mit dem Besuch beim Zahnarzt zu pflegen. Insbesondere Fissurenversiegelungen der bleiben Backenzähne, Beratung bei Kreidezähnen bzw. MIH Zähnen sowie die Beratung und Unterstützung bei der Zahnpflege mit festsitzenden Spangen spielt für diese Patientengruppe eine entscheidende Rolle.
+    - generic [ref=e146]:
+      - generic [ref=e147]:
+        - heading [level=2] [ref=e148]:
+          - strong [ref=e149]: Ein Ort, an dem Zahnheilkunde und gute Laune zusammenkommen.
+        - paragraph [ref=e150]: "Betritt man unsere liebevoll gestalteten Praxisräume fällt eins schnell auf: im Fokus steht hier nicht nur ein Umfeld, in dem medizinische Behandlungen durchgeführt werden können, sondern im Mittelpunkt steht das Wohlbefinden der jungen Patientinnen und Patienten. Dafür haben wir Räume geschaffen, in denen fröhliche Farben und Formen für gute Laune sorgen und der Angst ab der ersten Minute direkt entgegenwirken. In unserer Praxis und Klinik im Zentrum Böblingens haben wir eine Atmosphäre geschaffen, in der Kinder und Jugendliche sich gut aufgehoben und vor allem verstanden fühlen. Bei der gesamten Gestaltung unserer Zahnarztpraxis und Klinik haben wir größten Wert darauf gelegt, dass der Zahnarztbesuch für Ihr Kind zu einem positiven Erlebnis wird."
+      - generic [ref=e153]:
+        - img "Kinderzahnärztin mit Spiegel" [ref=e155]
+        - img "Kinderzahnärzte schauen in Mund" [ref=e157]
+        - img "Kinderzahnarztpraxis im Einsatz" [ref=e159]
+        - img "Kinderzahnarztpraxis beim Zähneputzen" [ref=e161]
+        - img "Kinderzahnärztin und Kinderbatman" [ref=e163]
+        - img "Kinderzahnarzt Belohnungen" [ref=e165]
+        - generic [ref=e166] [cursor=pointer]
+    - generic [ref=e178]:
+      - generic [ref=e179]:
+        - generic [ref=e180]: Eine Klinik, eine Praxis – noch mehr Expertise.
+        - generic [ref=e181]:
+          - img "Teambild" [ref=e183]
+          - generic [ref=e184]:
+            - heading "Großes Team für kleine Patientinnen und Patienten." [level=2] [ref=e185]
+            - paragraph [ref=e186]: "Unser hochqualifiziertes und herzliches Team ist speziell für den Umgang mit Kindern und Jugendlichen ausgebildet. Um stets auf dem neuesten Stand der Kinderzahnheilkunde zu sein, setzen wir auf ein breit gefächertes Weiterentwicklungs- und Fortbildungsangebot, das unser Team regelmäßig und gerne wahrnimmt. Das Arbeitsklima in unserer Klinik und Praxis ist genauso angenehm, wir die liebevoll gestalteten Räume selbst. Ob als Kollegen untereinander, die Bindung zu den Ärztinnen und Ärtzen in unserem Haus oder der Umgang mit den jungen Patientinnen und Patienten und ihren Eltern: wir bauen auf einen respekt- und vertrauensvollen Umgang nach innen und außen. Klingt nach einem Arbeitsumfeld, nach dem Sie suchen? Wir freuen uns immer über motivierte Mitarbeitende und Initiativbewerbungen!"
+      - generic [ref=e188]:
+        - heading [level=3] [ref=e189]:
+          - strong [ref=e190]: "Für Kinder und Erwachsene: unsere Praxis & Klinik für Zahnheilkunde in Böblingen!"
+        - paragraph [ref=e191]: Neben der Kinderzahnheilkunde für junge Patientinnen und Patienten betreuen wir auch Erwachsene, die mund-, kiefer- oder gesichtschirurgische Behandlungen in Anspruch nehmen müssen. Als Fachärzte- und damit Spezialistenteam sind wir sowohl für Patientinnen und Patienten als auch für zuweisende zahnärztliche und ärztliche Kollegen die medizinisch kompetenten Ansprechpartner in den Bereichen Implantologie, Oralchirurgie und ästhetischer Gesichtschirurgie.
+        - paragraph [ref=e192]: "Dank unterschiedlicher Schwerpunkte unserer Zahnärztinnen und Ärzte können wir jeden Patienten fachübergreifend beraten und behandeln: Von individuellen Behandlungsprogrammen über die Durchführung komplexer Behandlungsfälle bis hin zur Betreuung von Angstpatientinnen und Patienten. In den hochmodernen Räumen unserer Praxis- und Zahnarztklinik empfangen wir entsprechend nicht nur Kinder und Teenager, sondern gerne auch Erwachsene. Erfahren Sie mehr über unsere Klinik und Praxis für Zahnheilkunde in Böblingen direkt neben Sindelfingen und genau zwischen Stuttgart & Herrenberg!"
+        - link "Mehr erfahren" [ref=e193] [cursor=pointer]:
+          - /url: https://www.praxis-und-klinik.de
+    - generic [ref=e195]:
+      - heading "Fragen und Antworten" [level=2] [ref=e196]
+      - generic [ref=e210]:
+        - generic [ref=e211]:
+          - button [expanded] [ref=e212]:
+            - heading "Wann sollte ich mit meinem Kind das erste Mal zum Zahnarzt?" [level=3] [ref=e213]
+          - paragraph [ref=e215]: Wir empfehlen die erste Untersuchung ab dem ersten Zahn. Der erste Milchzahn bricht in der Regel zwischen dem 6. und 8. Lebensmonat durch. Danach empfehlen wir viertel- bzw. halbjährliche Kontrolltermine. Was für die einen sehr früh klingt, dient vor allem einem gesunden Umgang mit dem Zahnarztbesuch, da die Kinder routiniert und frei von Angst damit aufwachsen. Sie als Eltern werden rund um alle Fragen aus den Bereichen Ernährung, Zahnpflege, Anwendung von Fluoriden, die Nutzung von Schnullern und Nuckelflaschen oder aber auch das Daumenlutschen beraten. So arbeiten wir von Anfang an gemeinsam an der Zahngesundheit Ihres Kindes.
+        - generic [ref=e216]:
+          - button [ref=e217]:
+            - heading "Warum sollten ich mit meinem Kind extra in eine Kinderzahnarztpraxis?" [level=3] [ref=e218]
+          - paragraph [ref=e220]: Kinder unterscheiden sich nicht nur in allgemeinmedizinischer, sondern auch in zahnmedizinischer Hinsicht wesentlich von Erwachsenen. Der Besuch beim Kinderzahnarzt sollte daher genauso selbstverständlich sein, wie der beim allgemeinmedizinischen Kinderarzt. Die zahnärztlichen Behandlungsmöglichkeiten sind bei jedem Kind so individuell wie die besonderen Bedürfnisse des Kindes. Damit Kinder und Jugendliche eine positives Behandlungserlebnis erfahren und zu angstfreien Erwachsenen werden, die sich beim Zahnarztbesuch wohlfühlen, empfiehlt sich der Besuch einer Kinderzahnarztpraxis und Klinik.
+        - generic [ref=e221]:
+          - button [ref=e222]:
+            - heading "Darf ich auch ohne Überweisung einen Termin für mein Kind vereinbaren?" [level=3] [ref=e223]
+          - paragraph [ref=e225]: Natürlich. Wir schauen uns in der Erstuntersuchung die kleinen Patientinnen und Patienten an und besprechen dann gemeinsam mit den Eltern das weitere Vorgehen. Ein verständnisvoller Umgang sowie transparenter Austausch auf Augenhöhe stehen dabei im Mittelpunkt.
+        - generic [ref=e226]:
+          - button [ref=e227]:
+            - heading "Kann ich auch online einen Termin für mein Kind vereinbaren?" [level=3] [ref=e228]
+          - paragraph [ref=e230]: Am besten rufen Sie für einen Ersttermin bei uns in der Praxis und Klinik an. Damit wir mögliche erste Rückfragen direkt mit Ihnen klären können. Ihr Kind ist bereits Patientin oder Patient bei uns und Sie möchten lediglich den nächsten Vorsorge- und Kontrolltermin vereinbaren? Dann nutzen Sie gerne unser Online Terminbuchungstool!
+        - generic [ref=e231]:
+          - button [ref=e232]:
+            - heading "Müssen kariöse Milchzähne behandelt werden?" [level=3] [ref=e233]
+          - paragraph [ref=e235]: "Je nachdem, welche Erkrankung vorliegt und mit welchen Schmerzen oder Problemen diese einhergeht, müssen auch Milchzähne behandelt werden. Gesunde Milchzähne sind wichtig für die Sprachentwicklung und eine entspannte Nahrungsaufnahme. Zudem dienen die Milchzähne als Platzhalter für die bleibenden Zähne, die folgen. Ein vorzeitiger Milchzahnverlust kann einen Platzmangel für die durchbrechenden zweiten Zähne zur Folge haben oder aber auch Zahnfehlstellungen und Entwicklungsstörungen des Kiefers verursachen. Unbehandelter Kariesbefall kann neben Schmerzen außerdem auch bei den durchbrechenden bleibenden Zähnen zu Karies führen. Daher gilt: bereits ab dem ersten Zahn geben wir alles, um die Zahngesundheit zu erhalten oder wiederherzustellen."
+        - generic [ref=e236]:
+          - button [ref=e237]:
+            - heading "Wie komme ich am Besten zu euch?" [level=3] [ref=e238]
+          - generic [ref=e239]:
+            - paragraph [ref=e240]: Die Praxis & Klinik für Kiefer & Gesicht befindet sich im „CityCenter“ Böblingen, Wolfgang-Brumme-Allee 25, direkt neben dem Einkaufszentrum “Mercaden”. Für Patienten der Zahnklinik stehen in unserer Tiefgarage 27 kostenfreie Parkplätze zur Verfügung. Von der Tiefgarage erreichen Sie unsere Räumlichkeiten barrierefrei mit dem Aufzug.
+            - paragraph [ref=e241]: "Der Bahnhof Böblingen mit den S-Bahnanschlüssen S1: Herrenberg - Stuttgart - Kirchheim(Teck), S60: Böblingen - Sindelfingen - Renningen - Stuttgart, der Schönbuchbahn Böblingen - Dettenhausen sowie der Busbahnhof sind ca. 200 m entfernt."
+    - generic [ref=e244]:
+      - heading [level=2] [ref=e245]:
+        - strong [ref=e246]: "Für kleine, mittelgroße und große Zähne: Ihre Praxis & Klinik für Kinder und Erwachsene."
+      - paragraph [ref=e247]: In unserer Praxis und Klinik für Kinderzahnmedizin arbeitet ein perfekt geschultes Team daran, den Zahnarztbesuch für Kinder und Jugendliche angstfrei zu gestalten. In unseren liebevoll und kindgerecht gestalteten Räumen empfangen fröhliche Farben und freundliche Gesichter die jungen Patientinnen und Patienten. Ziel unserer Arbeit ist es, gemeinsam mit Ihnen die optimale Mundgesundheit Ihrer Kinder sicherzustellen. Durch die langjährige Erfahrung unserer Zahnärztinnen und Zahnärzte beraten wir Sie ganzheitlich, kindgerecht und auf Augenhöhe. Ganz gleich, ob Kassen- oder Privatpatienten – wir machen keinen Unterschied und behandeln immer individuell, transparent und professionell. Dabei bieten wir ein umfassendes Spektrum an kinderzahnärztlichen Leistungen.
+      - list [ref=e248]:
+        - listitem [ref=e249]:
+          - strong [ref=e250]: "Vorsorgeuntersuchungen:"
+          - text: Regelmäßige Kontrollen, um Karies und andere Zahnprobleme frühzeitig zu erkennen, ihnen entgegenzuwirken und sie individuell sowie kindgerecht zu behandeln.
+        - listitem [ref=e251]:
+          - strong [ref=e252]: "Prophylaxe:"
+          - text: Professionelle Zahnreinigung, Fluoridierung und Fissurenversiegelung zur Vorbeugung von Zahnerkrankungen.
+        - listitem [ref=e253]:
+          - strong [ref=e254]: "Zahnbehandlungen:"
+          - text: Schonende Behandlungsmethoden für Füllungen, Milchzahnkronen und Wurzelkanalbehandlungen.
+        - listitem [ref=e255]:
+          - strong [ref=e256]: "Zahnfehlstellungen:"
+          - text: Frühzeitige Erkennung und Behandlung von Zahnfehlstellungen in Zusammenarbeit mit Kieferorthopäden.
+        - listitem [ref=e257]:
+          - strong [ref=e258]: "Angstfreie Behandlungen:"
+          - text: Anwendung von kindgerechten Beruhigungsmethoden sowie Durchführung von Behandlungen unter Vollnarkose.
+      - paragraph [ref=e259]: Bei jeder Behandlung setzen wir dabei auf schonende und kindgerechte Methoden, die individuell an Ihr Kind angepasst werden. Dafür bieten wir flexible Sprechzeiten, um den Bedürfnissen unserer jungen Patientinnen und Patienten sowie Ihnen als Eltern gerecht zu werden. Termine können telefonisch oder online vereinbart werden. Zögern Sie nicht, uns zu kontaktieren – wir freuen uns darauf, Sie und Ihr Kind auf dem Weg zu gesunden Zähnen und einem strahlend schönen Lächeln zu begleiten.
+      - link "Jetzt Termin vereinbaren" [ref=e260] [cursor=pointer]:
+        - /url: https://web.online-tis.de/117015Yb6M/neuer-termin
+  - contentinfo [ref=e303]:
+    - generic [ref=e304]:
+      - link [ref=e305] [cursor=pointer]:
+        - /url: https://www.kinder-und-klinik.de
+        - img "Kinder Praxis & Klinik" [ref=e306]
+      - generic [ref=e307]:
+        - paragraph [ref=e309]:
+          - text: "Praxis & Klinik für Kiefer & GesichtWolfgang-Brumme-Allee 2571034 BöblingenTelefon:"
+          - link "07031 755770" [ref=e310] [cursor=pointer]:
+            - /url: tel:+497031755770
+          - link "Kontakt" [ref=e311] [cursor=pointer]:
+            - /url: https://www.praxis-und-klinik.de/kontakt/
+          - text: "|"
+          - link "Anfahrt" [ref=e312] [cursor=pointer]:
+            - /url: https://www.praxis-und-klinik.de/kontakt/anfahrt/
+          - link "Impressum" [ref=e313] [cursor=pointer]:
+            - /url: https://www.praxis-und-klinik.de/impressum/
+          - text: "|"
+          - link "Datenschutz" [ref=e314] [cursor=pointer]:
+            - /url: https://www.praxis-und-klinik.de/datenschutzerklaerung/
+        - generic [ref=e315]: Copyright 2026

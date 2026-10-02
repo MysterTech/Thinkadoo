@@ -1,0 +1,672 @@
+- generic [ref=f8e2]:
+  - banner [ref=f8e3]:
+    - link "Thinkadoo concept review" [ref=f8e4] [cursor=pointer]:
+      - /url: index.html
+      - img "Thinkadoo" [ref=f8e5]
+    - generic [ref=f8e6]: Visual directions · for review
+  - main [ref=f8e7]:
+    - region [ref=f8e8]:
+      - heading "Four worlds. One Thinkadoo." [level=1] [ref=f8e9]: Four worlds.One Thinkadoo.
+      - generic [ref=f8e10]:
+        - paragraph [ref=f8e11]: Different ways to turn a little curiosity into a whole lot of making. Explore the movement, the moments, and the feeling of each world.
+        - paragraph [ref=f8e12]: Craft kits and workshops that turn imagination, art and creative discovery into screen-free, hands-on experiences for children.
+    - generic [ref=f8e13]:
+      - paragraph [ref=f8e14]: These are live previews. Open a concept for the full experience.
+      - group "Preview viewport" [ref=f8e15]:
+        - button "Desktop" [pressed] [ref=f8e16] [cursor=pointer]
+        - button "Mobile" [ref=f8e17] [cursor=pointer]
+    - region "The four visual concepts" [ref=f8e18]:
+      - article [ref=f8e19]:
+        - generic [ref=f8e20]:
+          - generic [aria-hidden] [ref=f8e21]: A
+          - generic [ref=f8e22]:
+            - heading "The maker's table" [level=2] [ref=f8e23]
+            - paragraph [ref=f8e24]: Tactile · curious · close to the craft
+        - generic [ref=f8e25]:
+          - generic [ref=f8e26]:
+            - generic [ref=f8e31]: THE MAKER'S TABLE
+            - generic [ref=f8e32]: ↗
+          - iframe [ref=f8e34]:
+            - generic [ref=f9e1]:
+              - link "Skip to content" [ref=f9e2] [cursor=pointer]:
+                - /url: "#main"
+              - banner [ref=f9e3]:
+                - link "Thinkadoo home" [ref=f9e4] [cursor=pointer]:
+                  - /url: "#main"
+                  - img "Thinkadoo" [ref=f9e5]
+                - navigation "Main navigation" [ref=f9e6]:
+                  - link "Shop" [ref=f9e7] [cursor=pointer]:
+                    - /url: "#shop"
+                    - text: Shop
+                    - generic [aria-hidden] [ref=f9e8]: ↗
+                  - link "Workshops" [ref=f9e9] [cursor=pointer]:
+                    - /url: "#workshops"
+                  - link "Our story" [ref=f9e10] [cursor=pointer]:
+                    - /url: "#our-story"
+                  - link "Contact" [ref=f9e11] [cursor=pointer]:
+                    - /url: "#contact"
+              - main [ref=f9e12]:
+                - region [ref=f9e13]:
+                  - generic [ref=f9e14]:
+                    - heading [level=1] [ref=f9e15]:
+                      - text: A little mess.A lot of
+                      - emphasis [ref=f9e16]: wonder.
+                    - generic [ref=f9e17]:
+                      - paragraph [ref=f9e18]: Craft kits and workshops for little hands, big ideas, and the lovely things that happen in between.
+                      - link "Find a little project" [ref=f9e19] [cursor=pointer]:
+                        - /url: "#shop"
+                        - text: Find a little project
+                        - generic [aria-hidden] [ref=f9e20]: ↗
+                  - generic [ref=f9e21]:
+                    - img "Concept artwork of a colourful handmade cardboard mela truck, paper decorations, a paintbrush and open paint pots on a yellow craft table." [ref=f9e22]
+                    - paragraph [ref=f9e24]: No right way.Just your way.
+                    - generic [ref=f9e28]:
+                      - button "Open the kit" [ref=f9e29] [cursor=pointer]:
+                        - generic [aria-hidden] [ref=f9e33]: ↗
+                      - paragraph [ref=f9e34]: Go on. A little curiosity looks good on you.
+                  - generic [ref=f9e35]:
+                    - generic [ref=f9e36]: A little making. A little discovering. Completely yours.
+                    - generic [ref=f9e37]:
+                      - generic [aria-hidden] [ref=f9e38]: ✳
+                      - text: More hands-on. More imagination.
+                - region [ref=f9e39]:
+                  - generic [ref=f9e40]:
+                    - generic [ref=f9e41]:
+                      - paragraph [ref=f9e42]: A project taking shape
+                      - heading "Little pieces. Big possibilities." [level=2] [ref=f9e43]:
+                        - generic [ref=f9e44]: Little pieces.
+                        - generic [ref=f9e45]: Big possibilities.
+                      - list [ref=f9e46]:
+                        - listitem [ref=f9e47]:
+                          - strong [ref=f9e48]: Unfold
+                          - generic [ref=f9e49]: A little curiosity. A fresh possibility.
+                        - listitem [ref=f9e50]:
+                          - strong [ref=f9e51]: Decorate
+                          - generic [ref=f9e52]: Your colours. Your wonderfully wild ideas.
+                        - listitem [ref=f9e53]:
+                          - strong [ref=f9e54]: Imagine
+                          - generic [ref=f9e55]: Something you made. A story only you can tell.
+                      - link "Choose your next project" [ref=f9e56] [cursor=pointer]:
+                        - /url: "#shop"
+                        - text: Choose your next project
+                        - generic [aria-hidden] [ref=f9e57]: ↗
+                    - figure "Keep scrolling. It’s coming together. Made by your imagination." [ref=f9e58]:
+                      - generic [aria-hidden] [ref=f9e59]: A little making, in the making.
+                      - img "Craft pieces come together into a decorated mela truck as you scroll" [ref=f9e60]:
+                        - generic [ref=f9e62]: MELA
+                      - generic [ref=f9e104]:
+                        - generic [ref=f9e105]: Keep scrolling. It’s coming together.
+                        - generic [ref=f9e106]: Made by your imagination.
+                - region [ref=f9e107]:
+                  - generic [ref=f9e108]:
+                    - heading "Good things start with “what if?”" [level=2] [ref=f9e109]:
+                      - generic [ref=f9e110]: Good things start
+                      - generic [ref=f9e111]: with “what if?”
+                    - paragraph [ref=f9e112]: A blank piece of paper. A splash of colour. A box that becomes something else. Pick a project and see where their imagination takes it.
+                  - article [ref=f9e113]:
+                    - generic [ref=f9e114]:
+                      - generic [ref=f9e115]: Build a little world
+                      - img "Illustrated colourful mela truck craft kit" [ref=f9e116]
+                      - generic [ref=f9e118]: All aboard!
+                    - generic [ref=f9e119]:
+                      - paragraph [ref=f9e120]:
+                        - generic [ref=f9e121]: Build
+                        - generic [ref=f9e122]: /Decorate
+                        - generic [ref=f9e123]: /Play
+                      - heading "The Great Indian Mela Truck" [level=3] [ref=f9e124]: The Great IndianMela Truck
+                      - paragraph [ref=f9e125]: A tiny truck. A whole fair’s worth of ideas. Build your own colourful ride, then bring the mela to life through six playful making activities.
+                      - button "Explore the kit" [ref=f9e126] [cursor=pointer]:
+                        - text: Explore the kit
+                        - generic [aria-hidden] [ref=f9e127]: ↗
+                  - article [ref=f9e128]:
+                    - generic [ref=f9e129]:
+                      - generic [ref=f9e130]: Make it your own
+                      - img "Illustrated Ganesha craft and folding paper mantap" [ref=f9e131]
+                      - generic [ref=f9e133]: A little colour, a little joy.
+                    - generic [ref=f9e134]:
+                      - paragraph [ref=f9e135]:
+                        - generic [ref=f9e136]: Paint
+                        - generic [ref=f9e137]: /Fold
+                        - generic [ref=f9e138]: /Discover
+                      - heading "Paint My God" [level=3] [ref=f9e139]
+                      - paragraph [ref=f9e140]: A colourful way to explore a familiar story. Decorate Ganesha in your own way, then fold the packaging into a little mantap for your creation.
+                      - button "Explore the kit" [ref=f9e141] [cursor=pointer]:
+                        - text: Explore the kit
+                        - generic [aria-hidden] [ref=f9e142]: ↗
+                  - paragraph [ref=f9e143]: A first look at two possible projects. Artwork and product details are concept material.
+                - region [ref=f9e144]:
+                  - generic [ref=f9e145]:
+                    - generic [ref=f9e146]:
+                      - heading "A table full of possibilities." [level=2] [ref=f9e147]: A table fullof possibilities.
+                      - generic [ref=f9e148]:
+                        - paragraph [ref=f9e149]: Pull up a chair. Make something, try something, share an idea. Our workshop world is a place for creativity to happen together.
+                        - button "Take a look at workshops" [ref=f9e150] [cursor=pointer]:
+                          - text: Take a look at workshops
+                          - generic [aria-hidden] [ref=f9e151]: ↗
+                    - generic [ref=f9e152]:
+                      - button [ref=f9e153] [cursor=pointer]:
+                        - generic [ref=f9e158]:
+                          - strong [ref=f9e159]: Mela makers
+                          - text: Build, decorate and imagine a fair
+                        - generic [aria-hidden] [ref=f9e160]: ↗
+                      - button [ref=f9e161] [cursor=pointer]:
+                        - generic [ref=f9e168]:
+                          - strong [ref=f9e169]: Paint and tell
+                          - text: Let colours start a conversation
+                        - generic [aria-hidden] [ref=f9e170]: ↗
+                - region [ref=f9e171]:
+                  - img "A handmade paper flower, painted sketchbook and craft materials arranged on a maker’s table" [ref=f9e173]:
+                    - generic [ref=f9e175]: what if...
+                  - generic [ref=f9e199]:
+                    - heading "The best bit? “I made that.”" [level=2] [ref=f9e200]:
+                      - generic [ref=f9e201]: The best bit?
+                      - generic [ref=f9e202]: “I made that.”
+                    - paragraph [ref=f9e203]: We believe there’s a special kind of joy in turning an idea into something you can hold.
+                    - paragraph [ref=f9e204]: Thinkadoo brings imagination, art and creative discovery into children’s hands through screen-free craft kits and workshops. Room to experiment. Room to get a little messy. Room to surprise yourself.
+                    - paragraph [ref=f9e205]: Less watching. More “what if?”
+                - region "Contact Thinkadoo" [ref=f9e206]:
+                  - paragraph [ref=f9e207]: Have a little question?Or a big, wonderful idea?
+                  - button "Let’s talk" [ref=f9e208] [cursor=pointer]:
+                    - text: Let’s talk
+                    - generic [aria-hidden] [ref=f9e209]: ↗
+              - contentinfo [ref=f9e210]:
+                - generic [ref=f9e211]:
+                  - generic [ref=f9e212]:
+                    - generic [ref=f9e213]:
+                      - link "Back to Thinkadoo home" [ref=f9e214] [cursor=pointer]:
+                        - /url: "#main"
+                        - img "Thinkadoo" [ref=f9e215]
+                      - paragraph [ref=f9e216]: Make a little room for imagination.
+                    - generic [ref=f9e217]:
+                      - generic [ref=f9e218]:
+                        - link "Shop the kits" [ref=f9e219] [cursor=pointer]:
+                          - /url: "#shop"
+                        - link "Creative workshops" [ref=f9e220] [cursor=pointer]:
+                          - /url: "#workshops"
+                        - link "Our story" [ref=f9e221] [cursor=pointer]:
+                          - /url: "#our-story"
+                        - link "Contact" [ref=f9e222] [cursor=pointer]:
+                          - /url: "#contact"
+                      - generic [ref=f9e223]:
+                        - button "Shipping & returns" [ref=f9e224] [cursor=pointer]
+                        - button "Questions & answers" [ref=f9e225] [cursor=pointer]
+                        - button "Privacy" [ref=f9e226] [cursor=pointer]
+                  - generic [ref=f9e227]:
+                    - generic [ref=f9e228]: Thinkadoo · A world of things to make.
+                    - generic [ref=f9e229]: Visual concept A — The maker’s table
+              - generic "Concept review controls" [ref=f9e230]:
+                - link "← All four concepts" [ref=f9e231] [cursor=pointer]:
+                  - /url: index.html
+                - button "Motion on" [pressed] [ref=f9e232] [cursor=pointer]
+        - generic [ref=f8e35]:
+          - generic [ref=f8e36]:
+            - paragraph [ref=f8e37]: A bright tabletop, real material texture, and the small satisfaction of putting something together.
+            - generic [ref=f8e38]: Scroll to assemble the pieces. Hover over kit artwork, then try opening the box.
+          - link "Explore A" [ref=f8e39] [cursor=pointer]:
+            - /url: 01-makers-table.html
+            - text: Explore A
+            - generic [aria-hidden] [ref=f8e40]: ↗
+      - article [ref=f8e41]:
+        - generic [ref=f8e42]:
+          - generic [aria-hidden] [ref=f8e43]: B
+          - generic [ref=f8e44]:
+            - heading "The playroom" [level=2] [ref=f8e45]
+            - paragraph [ref=f8e46]: Graphic · bouncy · full of possibility
+        - generic [ref=f8e47]:
+          - generic [ref=f8e48]:
+            - generic [ref=f8e53]: THE PLAYROOM
+            - generic [ref=f8e54]: ↗
+          - iframe [ref=f8e56]:
+            - generic [ref=f10e1]:
+              - link "Skip to content" [ref=f10e2] [cursor=pointer]:
+                - /url: "#main"
+              - banner [ref=f10e4]:
+                - link "Thinkadoo home" [ref=f10e5] [cursor=pointer]:
+                  - /url: "#main"
+                  - img "Thinkadoo" [ref=f10e6]
+                - navigation "Main navigation" [ref=f10e7]:
+                  - link "Shop kits" [ref=f10e8] [cursor=pointer]:
+                    - /url: "#shop"
+                  - link "Workshops" [ref=f10e9] [cursor=pointer]:
+                    - /url: "#workshops"
+                  - link "Our story" [ref=f10e10] [cursor=pointer]:
+                    - /url: "#story"
+                  - link "Contact" [ref=f10e11] [cursor=pointer]:
+                    - /url: "#contact"
+              - main [ref=f10e12]:
+                - region [ref=f10e13]:
+                  - generic [ref=f10e14]:
+                    - heading "Small hands. Big possibilities." [level=1] [ref=f10e15]:
+                      - generic [ref=f10e16]: Small hands.
+                      - generic [ref=f10e17]: Big possibilities.
+                    - paragraph [ref=f10e18]: Craft kits and workshops for big imaginations.A little less screen. A whole lot more doing.
+                    - group "Explore ways to create" [ref=f10e19]:
+                      - button "Make" [pressed] [ref=f10e20] [cursor=pointer]
+                      - button "Paint" [ref=f10e23] [cursor=pointer]
+                      - button "Play" [ref=f10e26] [cursor=pointer]
+                  - img "An illustrated colourful cardboard mela truck with craft paper, a paint pot and a folded fan" [ref=f10e30]:
+                    - generic [aria-hidden] [ref=f10e45]: Start withan idea.
+                    - generic [aria-hidden] [ref=f10e47]: Make ityour own.
+                  - generic [ref=f10e49]:
+                    - paragraph [ref=f10e50]:
+                      - strong [ref=f10e51]: From flat pieces to “I made that!”
+                      - text: Build a little world, one bright idea at a time.
+                    - link "Find your next project" [ref=f10e52] [cursor=pointer]:
+                      - /url: "#shop"
+                - region "The Thinkadoo spirit" [ref=f10e55]:
+                  - generic [ref=f10e56]:
+                    - generic [ref=f10e57]: Big ideas welcome.
+                    - generic [ref=f10e60]: Mess encouraged.
+                    - generic [ref=f10e63]: Made by you.
+                - region [ref=f10e64]:
+                  - generic [ref=f10e65]:
+                    - generic [ref=f10e66]:
+                      - heading "What will you make of it?" [level=2] [ref=f10e67]: What will youmake of it?
+                      - generic [ref=f10e68]:
+                        - paragraph [ref=f10e69]: Open a kit. Follow your curiosity.See where your hands take you.
+                        - generic [ref=f10e70]:
+                          - button "Previous kit" [disabled] [ref=f10e71]
+                          - button "Next kit" [ref=f10e74] [cursor=pointer]
+                    - generic "Explore the kits" [ref=f10e77]:
+                      - article [ref=f10e78]:
+                        - button "Explore The Great Indian Mela Truck" [ref=f10e79] [cursor=pointer]:
+                          - generic [aria-hidden] [ref=f10e80]: ROLL WITH IT.
+                          - generic [aria-hidden] [ref=f10e83]: Build.Decorate.Play.
+                        - generic [ref=f10e86]:
+                          - generic [ref=f10e87]:
+                            - heading "The Great Indian Mela Truck" [level=3] [ref=f10e88]: The Great IndianMela Truck
+                            - paragraph [ref=f10e89]: A make-it-yourself fair, ready for a little adventure.
+                          - button "Explore kit" [ref=f10e90] [cursor=pointer]
+                      - article [ref=f10e93]:
+                        - button "Explore Paint My God" [ref=f10e94] [cursor=pointer]:
+                          - generic [aria-hidden] [ref=f10e95]: COLOUR YOUR WAY.
+                          - generic [aria-hidden] [ref=f10e98]: A littlecolour.A big story.
+                        - generic [ref=f10e101]:
+                          - generic [ref=f10e102]:
+                            - heading "Paint My God" [level=3] [ref=f10e103]
+                            - paragraph [ref=f10e104]: Your colours, your Ganesha, your little mantap.
+                          - button "Explore kit" [ref=f10e105] [cursor=pointer]
+                - region [ref=f10e108]:
+                  - generic [ref=f10e109]:
+                    - generic [ref=f10e110]:
+                      - generic [ref=f10e111]:
+                        - generic [ref=f10e112]: More hands. More happy accidents.
+                        - heading "Come make some happy." [level=2] [ref=f10e113]: Come makesome happy.
+                        - paragraph [ref=f10e114]: There’s something about making together. New ideas, colourful tables, and that lovely moment when a little imagination becomes a real thing.
+                        - button "Explore workshops" [ref=f10e115] [cursor=pointer]
+                      - img [ref=f10e119]:
+                        - generic [ref=f10e122]: THE DOING
+                        - generic [ref=f10e123]: CLUB
+                    - generic [ref=f10e140]:
+                      - paragraph [ref=f10e141]: For the joy of trying, getting a little messy, and making something that’s yours.
+                      - link "Meet Thinkadoo" [ref=f10e142] [cursor=pointer]:
+                        - /url: "#story"
+                - region [ref=f10e145]:
+                  - generic [ref=f10e146]:
+                    - generic [ref=f10e147]:
+                      - heading [level=2] [ref=f10e148]:
+                        - text: A world of ideas.
+                        - emphasis [ref=f10e149]: Made by you.
+                      - generic [ref=f10e150]:
+                        - paragraph [ref=f10e151]: We believe imagination likes to get its hands dirty. To fold a piece of paper. Try a different colour. Turn “what if?” into something you can hold.
+                        - paragraph [ref=f10e152]: Thinkadoo brings art and creative discovery into screen-free craft kits and workshops. Room to explore. Things to make. And plenty of possibilities along the way.
+                    - generic [ref=f10e153]:
+                      - generic [ref=f10e154]: A little wonder.
+                      - generic [ref=f10e157]: A lot of doing.
+                      - generic [ref=f10e160]: That’s Thinkadoo.
+              - contentinfo [ref=f10e161]:
+                - generic [ref=f10e162]:
+                  - generic [ref=f10e163]:
+                    - generic [ref=f10e164]:
+                      - link "Back to Thinkadoo home" [ref=f10e165] [cursor=pointer]:
+                        - /url: "#main"
+                        - img "Thinkadoo" [ref=f10e166]
+                      - paragraph [ref=f10e167]: For curious minds, colourful tablesand the things we haven’t imagined yet.
+                    - navigation "Footer navigation" [ref=f10e168]:
+                      - link "Shop kits" [ref=f10e169] [cursor=pointer]:
+                        - /url: "#shop"
+                      - button "Get in touch ↗" [ref=f10e170] [cursor=pointer]
+                      - link "Workshops" [ref=f10e171] [cursor=pointer]:
+                        - /url: "#workshops"
+                      - button "Shipping & returns" [ref=f10e172] [cursor=pointer]
+                      - link "Our story" [ref=f10e173] [cursor=pointer]:
+                        - /url: "#story"
+                      - button "Questions & answers" [ref=f10e174] [cursor=pointer]
+                      - button "Schools & partners" [ref=f10e175] [cursor=pointer]
+                      - button "Privacy" [ref=f10e176] [cursor=pointer]
+                  - generic [ref=f10e177]:
+                    - paragraph [ref=f10e178]: © Thinkadoo · A little imagination goes a long way.
+                    - paragraph [ref=f10e179]: Design exploration · The Playroom
+              - complementary "Concept review controls" [ref=f10e180]:
+                - link "← All concepts" [ref=f10e181] [cursor=pointer]:
+                  - /url: index.html
+                - button "Motion on" [pressed] [ref=f10e182] [cursor=pointer]
+        - generic [ref=f8e57]:
+          - generic [ref=f8e58]:
+            - paragraph [ref=f8e59]: A cobalt world of expressive type and toy-like objects. Making becomes something you can try on the page.
+            - generic [ref=f8e60]: Scroll through the shifting type and colour band. Move over the shelf; try all three modes.
+          - link "Explore B" [ref=f8e61] [cursor=pointer]:
+            - /url: 02-playroom.html
+            - text: Explore B
+            - generic [aria-hidden] [ref=f8e62]: ↗
+      - article [ref=f8e63]:
+        - generic [ref=f8e64]:
+          - generic [aria-hidden] [ref=f8e65]: C
+          - generic [ref=f8e66]:
+            - heading "The craft journal" [level=2] [ref=f8e67]
+            - paragraph [ref=f8e68]: Expressive · editorial · made by hand
+        - generic [ref=f8e69]:
+          - generic [ref=f8e70]:
+            - generic [ref=f8e75]: THE CRAFT JOURNAL
+            - generic [ref=f8e76]: ↗
+          - iframe [ref=f8e78]:
+            - generic [ref=f11e1]:
+              - link "Skip to content" [ref=f11e2] [cursor=pointer]:
+                - /url: "#main"
+              - banner [ref=f11e3]:
+                - link "Thinkadoo home" [ref=f11e4] [cursor=pointer]:
+                  - /url: "#main"
+                  - img "Thinkadoo" [ref=f11e5]
+                - generic [ref=f11e6]: A little worldof making.
+                - navigation "Main navigation" [ref=f11e7]:
+                  - link "Shop" [ref=f11e8] [cursor=pointer]:
+                    - /url: "#shop"
+                  - link "Workshops" [ref=f11e9] [cursor=pointer]:
+                    - /url: "#workshops"
+                  - link "Our Story" [ref=f11e10] [cursor=pointer]:
+                    - /url: "#story"
+                  - link "Contact" [ref=f11e11] [cursor=pointer]:
+                    - /url: "#contact"
+              - main [ref=f11e12]:
+                - region "Welcome to Thinkadoo" [ref=f11e13]:
+                  - generic [ref=f11e14]:
+                    - heading "Big ideas." [level=1] [ref=f11e15]:
+                      - generic [ref=f11e16]: Big
+                      - generic [ref=f11e17]: ideas.
+                    - paragraph [ref=f11e18]: All great thingsstart witha little play. ↙
+                  - generic [ref=f11e21]:
+                    - generic [ref=f11e22]:
+                      - generic [ref=f11e23]:
+                        - img "An original floral block-print sheet. Use the ink and stamp controls to make your own pattern." [ref=f11e24]
+                        - generic [ref=f11e52]:
+                          - generic [ref=f11e53]: A pattern with your fingerprints on it.
+                          - generic [aria-hidden] [ref=f11e54]: ↓ Make a mark
+                      - generic "Print studio controls" [ref=f11e55]:
+                        - group "Choose stamp ink" [ref=f11e56]:
+                          - button "Red ink" [pressed] [ref=f11e57] [cursor=pointer]
+                          - button "Teal ink" [ref=f11e58] [cursor=pointer]
+                          - button "Black ink" [ref=f11e59] [cursor=pointer]
+                        - button "Stamp a flower" [ref=f11e60] [cursor=pointer]: Stamp a flower ↗
+                        - button "Clear print" [ref=f11e61] [cursor=pointer]
+                      - status [ref=f11e62]: Choose an ink. Stamp a flower. See where it takes you.
+                    - generic [ref=f11e63]:
+                      - heading "Little hands." [level=2] [ref=f11e64]
+                      - paragraph [ref=f11e65]: Imagination, meet the real world. Screen-free craft kits and workshops for the beautifully curious.
+                      - link "Find their next big idea" [ref=f11e66] [cursor=pointer]:
+                        - /url: "#shop"
+                        - text: Find their next big idea
+                        - generic [aria-hidden] [ref=f11e67]: ↗
+                      - paragraph [ref=f11e68]:
+                        - generic [aria-hidden] [ref=f11e69]: ✳
+                        - text: More making.More “look what I made!”
+                - region [ref=f11e70]:
+                  - generic [ref=f11e71]:
+                    - heading "Open a box. Go somewhere." [level=2] [ref=f11e72]: Open a box.Go somewhere.
+                    - paragraph [ref=f11e73]: A little building, a little painting, a whole lot of possibility. There’s more than one way to make it your own.
+                  - article [ref=f11e74]:
+                    - generic [ref=f11e75]:
+                      - paragraph [ref=f11e76]: Build · Decorate · Play
+                      - heading "The Great Indian Mela Truck" [level=3] [ref=f11e77]
+                      - paragraph [ref=f11e78]: Make your own little celebration. Build a colourful truck, explore six mela activities, then see where play takes you.
+                      - button "Explore the kit" [ref=f11e79] [cursor=pointer]:
+                        - text: Explore the kit
+                        - generic [aria-hidden] [ref=f11e80]: ↗
+                    - button "Explore The Great Indian Mela Truck" [ref=f11e81] [cursor=pointer]:
+                      - img "Concept illustration of a red, decorated mela truck with bunting and patterned panels" [ref=f11e82]
+                      - generic [ref=f11e85]:
+                        - generic [ref=f11e86]: A celebration on wheels.
+                        - generic [ref=f11e87]: Explore kit ↗
+                  - article [ref=f11e88]:
+                    - generic [ref=f11e89]:
+                      - paragraph [ref=f11e90]: Paint · Fold · Imagine
+                      - heading "Paint My God" [level=3] [ref=f11e91]
+                      - paragraph [ref=f11e92]: A blank canvas with a familiar face. Give Ganesha your own colours, then fold the packaging into a little mantap.
+                      - button "Explore the kit" [ref=f11e93] [cursor=pointer]:
+                        - text: Explore the kit
+                        - generic [aria-hidden] [ref=f11e94]: ↗
+                    - button "Explore Paint My God" [ref=f11e95] [cursor=pointer]:
+                      - img "Concept illustration of a Ganesha figure inside a colourful folded paper mantap" [ref=f11e98]
+                      - generic [ref=f11e101]:
+                        - generic [ref=f11e102]: A story in every colour.
+                        - generic [ref=f11e103]: Explore kit ↗
+                  - generic "Make a mark. Make a mess. Make it yours." [ref=f11e104]:
+                    - generic [aria-hidden] [ref=f11e105]:
+                      - generic [ref=f11e106]: Make a mark.
+                      - generic [ref=f11e107]: ✳
+                      - generic [ref=f11e108]: Make a mark.
+                      - generic [ref=f11e109]: ✳
+                      - generic [ref=f11e110]: Make a mark.
+                    - generic [aria-hidden] [ref=f11e111]:
+                      - generic [ref=f11e112]: Make it yours.
+                      - generic [ref=f11e113]: ✳
+                      - generic [ref=f11e114]: Make it yours.
+                      - generic [ref=f11e115]: ✳
+                      - generic [ref=f11e116]: Make it yours.
+                    - paragraph [ref=f11e117]: A little ink. A world of possibilities.
+                - region [ref=f11e118]:
+                  - generic [ref=f11e119]:
+                    - heading "Good things get made together." [level=2] [ref=f11e120]: Good thingsget madetogether.
+                    - paragraph [ref=f11e121]: Pull up a chair. Bring your questions. Our workshop ideas make room for shared stories, surprising colours and happy discoveries.
+                  - generic [ref=f11e122]:
+                    - button [ref=f11e123] [cursor=pointer]:
+                      - heading "Mela makers" [level=3] [ref=f11e126]
+                      - paragraph [ref=f11e127]: Build, decorate and dream upyour own little celebration.
+                      - generic [aria-hidden] [ref=f11e128]: ↗
+                    - button [ref=f11e129] [cursor=pointer]:
+                      - heading "Paint and tell" [level=3] [ref=f11e132]
+                      - paragraph [ref=f11e133]: Follow a colour. Make a mark.Find a story along the way.
+                      - generic [aria-hidden] [ref=f11e134]: ↗
+                  - paragraph [ref=f11e135]: Explore sample workshop formats. Session details are still taking shape.
+                - region [ref=f11e136]:
+                  - generic [ref=f11e137]: A little wonderfully different.
+                  - generic [ref=f11e152]:
+                    - heading "There’s no one way to wonder." [level=2] [ref=f11e153]
+                    - paragraph [ref=f11e154]: Thinkadoo is for the ideas that start small and go somewhere unexpected. The curious “what if?”, the colour outside the line, the cardboard box that becomes a whole new world.
+                    - paragraph [ref=f11e155]: We turn imagination, art and creative discovery into hands-on experiences for children. Through kits and workshops, we make space for the joy of making.
+                    - paragraph [ref=f11e156]: Less watching. More wondering. More doing.
+              - contentinfo [ref=f11e157]:
+                - generic [ref=f11e158]:
+                  - link "Thinkadoo, back to top" [ref=f11e159] [cursor=pointer]:
+                    - /url: "#main"
+                    - img "Thinkadoo" [ref=f11e160]
+                  - paragraph [ref=f11e161]: The next great ideais in their hands.
+                - generic [ref=f11e162]:
+                  - generic [ref=f11e163]:
+                    - link "Shop kits" [ref=f11e164] [cursor=pointer]:
+                      - /url: "#shop"
+                    - link "Workshops" [ref=f11e165] [cursor=pointer]:
+                      - /url: "#workshops"
+                    - link "Our Story" [ref=f11e166] [cursor=pointer]:
+                      - /url: "#story"
+                    - button "Contact" [ref=f11e167] [cursor=pointer]
+                    - button "FAQs" [ref=f11e168] [cursor=pointer]
+                    - button "Shipping & returns" [ref=f11e169] [cursor=pointer]
+                    - button "Privacy" [ref=f11e170] [cursor=pointer]
+                  - paragraph [ref=f11e171]: Thinkadoo · A world of making.This is a design preview.
+              - complementary "Design review controls" [ref=f11e172]:
+                - link "← All concepts" [ref=f11e173] [cursor=pointer]:
+                  - /url: index.html
+                - button "Motion on" [pressed] [ref=f11e174] [cursor=pointer]
+        - generic [ref=f8e79]:
+          - generic [ref=f8e80]:
+            - paragraph [ref=f8e81]: Big red type, an open editorial rhythm, and the pleasure of leaving your own mark.
+            - generic [ref=f8e82]: Scroll to straighten the print and move the type. Hover over the paper spreads; make a stamp.
+          - link "Explore C" [ref=f8e83] [cursor=pointer]:
+            - /url: 03-craft-journal.html
+            - text: Explore C
+            - generic [aria-hidden] [ref=f8e84]: ↗
+      - article [ref=f8e85]:
+        - generic [ref=f8e86]:
+          - generic [aria-hidden] [ref=f8e87]: D
+          - generic [ref=f8e88]:
+            - heading "The paper theatre" [level=2] [ref=f8e89]
+            - paragraph [ref=f8e90]: Immersive · layered · a story in a box
+        - generic [ref=f8e91]:
+          - generic [ref=f8e92]:
+            - generic [ref=f8e97]: THE PAPER THEATRE
+            - generic [ref=f8e98]: ↗
+          - iframe [ref=f8e100]:
+            - generic [ref=f12e1]:
+              - link "Skip to content" [ref=f12e2] [cursor=pointer]:
+                - /url: "#main"
+              - banner [ref=f12e3]:
+                - generic [ref=f12e4]:
+                  - link "Thinkadoo home" [ref=f12e5] [cursor=pointer]:
+                    - /url: "#main"
+                    - img "Thinkadoo" [ref=f12e6]
+                  - navigation "Main navigation" [ref=f12e7]:
+                    - link "Shop" [ref=f12e8] [cursor=pointer]:
+                      - /url: "#shop"
+                    - link "Workshops" [ref=f12e9] [cursor=pointer]:
+                      - /url: "#workshops"
+                    - link "Our Story" [ref=f12e10] [cursor=pointer]:
+                      - /url: "#our-story"
+                    - link "Contact" [ref=f12e11] [cursor=pointer]:
+                      - /url: "#contact"
+                  - button "Motion on" [pressed] [ref=f12e12] [cursor=pointer]
+              - main [ref=f12e14]:
+                - region [ref=f12e15]:
+                  - generic [ref=f12e16]:
+                    - heading "Every box begins a story." [level=1] [ref=f12e17]:
+                      - generic [ref=f12e18]: Every
+                      - generic [ref=f12e19]: box
+                      - generic [ref=f12e20]: begins
+                      - generic [ref=f12e21]: a
+                      - generic [ref=f12e22]: story.
+                    - paragraph [ref=f12e23]:
+                      - text: Craft kits and workshops for little imaginations.
+                      - strong [ref=f12e24]: Open up a world of screen-free, hands-on discovery.
+                  - generic [ref=f12e25]:
+                    - img "A paper fair waiting to be made A decorated cardboard truck sits among fold-out fair stalls, paper arches, flags and a colourful fan. Three chapters explore opening, making and playing." [ref=f12e26]
+                    - button "Unfold the paper fan" [ref=f12e120] [cursor=pointer]
+                    - paragraph [ref=f12e132]: A little paper. A whole world.
+                  - generic [ref=f12e133]:
+                    - generic [ref=f12e134]:
+                      - heading "Start with possibility." [level=2] [ref=f12e135]
+                      - paragraph [ref=f12e136]: A box, a few pieces and a “what if?” Every good adventure starts somewhere.
+                    - generic "Story chapters" [ref=f12e137]:
+                      - button "Previous chapter" [ref=f12e138] [cursor=pointer]: ←
+                      - generic [ref=f12e139]:
+                        - 'button "Chapter 1: Open the box" [pressed] [ref=f12e140] [cursor=pointer]': "1"
+                        - 'button "Chapter 2: Make it yours" [ref=f12e141] [cursor=pointer]': "2"
+                        - 'button "Chapter 3: Let the story roll" [ref=f12e142] [cursor=pointer]': "3"
+                      - button "Next chapter" [ref=f12e143] [cursor=pointer]: →
+                    - button "Pull the curtain" [ref=f12e144] [cursor=pointer]
+                  - generic [ref=f12e148]:
+                    - link "Explore the kits" [ref=f12e149] [cursor=pointer]:
+                      - /url: "#shop"
+                      - text: Explore the kits
+                      - generic [aria-hidden] [ref=f12e150]: ↓
+                    - link "Find your workshop" [ref=f12e151] [cursor=pointer]:
+                      - /url: "#workshops"
+                      - text: Find your workshop
+                      - generic [aria-hidden] [ref=f12e152]: ↘
+                - region [ref=f12e154]:
+                  - generic [ref=f12e155]:
+                    - generic [ref=f12e156]:
+                      - heading "Small boxes. Wide-open worlds." [level=2] [ref=f12e157]: Small boxes.Wide-open worlds.
+                      - paragraph [ref=f12e158]: Something to build. Something to colour. Somewhere only their imagination can take them.
+                    - article [ref=f12e159]:
+                      - img "Concept illustration of the Great Indian Mela Truck and paper fair pieces" [ref=f12e161]
+                      - generic [ref=f12e177]:
+                        - paragraph [ref=f12e178]: Build · Decorate · Play
+                        - heading "The Great Indian Mela Truck" [level=3] [ref=f12e179]
+                        - paragraph [ref=f12e180]: Build the truck. Bring a little fair to life. Six mela-inspired activities invite children to make up the adventure as they go.
+                        - button "Explore this kit" [ref=f12e181] [cursor=pointer]:
+                          - text: Explore this kit
+                          - generic [aria-hidden] [ref=f12e182]: ↗
+                        - paragraph [ref=f12e183]: Illustrated kit concept. Product details are provisional.
+                    - article [ref=f12e184]:
+                      - img "Concept illustration of a paintable Ganesha and a folded paper mantap" [ref=f12e186]
+                      - generic [ref=f12e196]:
+                        - paragraph [ref=f12e197]: Paint · Fold · Discover
+                        - heading "Paint My God" [level=3] [ref=f12e198]
+                        - paragraph [ref=f12e199]: A blank Ganesha, a splash of imagination. Paint your own little character, then fold the packaging into a mantap for the story to continue.
+                        - button "Explore this kit" [ref=f12e200] [cursor=pointer]:
+                          - text: Explore this kit
+                          - generic [aria-hidden] [ref=f12e201]: ↗
+                        - paragraph [ref=f12e202]: Illustrated kit concept. Product details are provisional.
+                - region [ref=f12e203]:
+                  - generic [ref=f12e204]:
+                    - generic [ref=f12e205]:
+                      - img "An illustrated shared craft table with paint, brushes, paper and an unfolding truck" [ref=f12e206]
+                      - generic [ref=f12e231]: Make a little together.
+                    - generic [ref=f12e232]:
+                      - heading "Some stories are better made together." [level=2] [ref=f12e233]: Some stories are bettermade together.
+                      - paragraph [ref=f12e234]: A table full of materials. A room full of ideas. Our workshop world makes space for children to try, tinker and discover their own way of making.
+                      - button "Preview a workshop" [ref=f12e235] [cursor=pointer]:
+                        - text: Preview a workshop
+                        - generic [aria-hidden] [ref=f12e236]: ↗
+                      - paragraph [ref=f12e237]: Explore sample activities in the preview.
+                - region [ref=f12e238]:
+                  - generic [ref=f12e239]:
+                    - heading [level=2] [ref=f12e243]:
+                      - text: The best bit?
+                      - emphasis [ref=f12e244]: “I made this.”
+                    - generic [ref=f12e245]:
+                      - paragraph [ref=f12e246]: We believe imagination deserves something to hold. A brush. A piece of paper. A little idea that becomes something entirely their own.
+                      - paragraph [ref=f12e247]: Thinkadoo turns art and creative discovery into screen-free, hands-on experiences for children. Through craft kits and workshops, we invite them to explore, experiment and enjoy the making.
+                      - link "Find a place to begin" [ref=f12e248] [cursor=pointer]:
+                        - /url: "#shop"
+                        - text: Find a place to begin
+                        - generic [aria-hidden] [ref=f12e249]: ↗
+              - contentinfo [ref=f12e250]:
+                - generic [ref=f12e251]:
+                  - generic [ref=f12e252]:
+                    - generic [ref=f12e253]:
+                      - heading "Ready for the next little adventure?" [level=2] [ref=f12e254]: Ready for thenext little adventure?
+                      - link "Meet the craft kits" [ref=f12e255] [cursor=pointer]:
+                        - /url: "#shop"
+                        - text: Meet the craft kits
+                        - generic [aria-hidden] [ref=f12e256]: ↗
+                    - navigation "Footer navigation" [ref=f12e257]:
+                      - link "Shop" [ref=f12e258] [cursor=pointer]:
+                        - /url: "#shop"
+                      - link "Workshops" [ref=f12e259] [cursor=pointer]:
+                        - /url: "#workshops"
+                      - link "Our Story" [ref=f12e260] [cursor=pointer]:
+                        - /url: "#our-story"
+                      - button "Contact" [ref=f12e261] [cursor=pointer]
+                      - button "Delivery & returns" [ref=f12e262] [cursor=pointer]
+                      - button "Privacy" [ref=f12e263] [cursor=pointer]
+                  - generic [ref=f12e264]:
+                    - link "Back to Thinkadoo home" [ref=f12e265] [cursor=pointer]:
+                      - /url: "#main"
+                      - img "Thinkadoo" [ref=f12e266]
+                    - paragraph [ref=f12e267]: A Thinkadoo design concept. Illustrations and product descriptions are provisional.Shopping and workshop booking are unavailable in this preview.
+              - link "← All four concepts" [ref=f12e268] [cursor=pointer]:
+                - /url: index.html
+        - generic [ref=f8e101]:
+          - generic [ref=f8e102]:
+            - paragraph [ref=f8e103]: A little stage made from paper. Each chapter transforms the scene and opens another path into play.
+            - generic [ref=f8e104]: Scroll through the layered stage. Open the curtains, explore the scenery, and change chapters.
+          - link "Explore D" [ref=f8e105] [cursor=pointer]:
+            - /url: 04-paper-theatre.html
+            - text: Explore D
+            - generic [aria-hidden] [ref=f8e106]: ↗
+    - generic [ref=f8e107]:
+      - heading "Find the parts you want to keep." [level=2] [ref=f8e108]: Find the partsyou want to keep.
+      - generic [ref=f8e109]:
+        - generic [ref=f8e110]:
+          - heading "The first impression" [level=3] [ref=f8e111]
+          - paragraph [ref=f8e112]: Which world feels like Thinkadoo before you read a word?
+        - generic [ref=f8e113]:
+          - heading "The interaction" [level=3] [ref=f8e114]
+          - paragraph [ref=f8e115]: Which motion feels like making, and which feels like too much?
+        - generic [ref=f8e116]:
+          - heading "The everyday website" [level=3] [ref=f8e117]
+          - paragraph [ref=f8e118]: Which approach would make kits and workshops easiest to explore?
+  - contentinfo [ref=f8e119]:
+    - paragraph [ref=f8e120]: Exploration, not a final storefront. Original Thinkadoo logos are used throughout. Illustrations, generated artwork, product examples and editorial copy are concept material. Payments and bookings are unavailable. You can choose a direction or combine specific parts.
+    - link "Reference study ↗" [ref=f8e121] [cursor=pointer]:
+      - /url: ../research/visual-references.md

@@ -8,6 +8,10 @@ Thinkadoo is a children's craft-kit and workshop brand that turns imagination, a
 
 This repository holds the **design exploration** for the Thinkadoo public website: the product and design docs, plus four standalone HTML homepage concepts to compare. No visual direction has been chosen yet, and the architecture has not been decided. There is no production frontend.
 
+The newest set is [Four worlds in motion](docs/concepts-motion/index.html): **Unbox a little universe**, **Type is a toy**, **A world in a fold**, and **The print club**. These HTML review experiences emphasise substantial scroll transformations, text/illustration hover, manual making interactions and complete local customer flows. Open the board through the current local preview at `http://127.0.0.1:4173/docs/concepts-motion/index.html`, or open the HTML file directly. The earlier sets remain preserved.
+
+Their fresh source snapshots, live behaviour research and contract are under `docs/research/2026-10-02-source-refresh.md`, `docs/research/2026-10-02-motion-study.md` and `docs/design/2026-10-02-motion-concepts.md`. `frontend/` stays reserved for the final chosen codebase. Confirmed source prices and age recommendations are included; orders, payments, bookings and enquiries remain unavailable in these local prototypes.
+
 ## What's here
 
 ```
