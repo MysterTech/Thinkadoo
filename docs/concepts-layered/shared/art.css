@@ -1,0 +1,50 @@
+/* Activity-illustration motion. Runs only inside .perform and only when Motion is on.
+   Each rule explains an object: it is the "Explain" job in the Motion Charter. */
+@keyframes tdo-spin{to{transform:rotate(360deg)}}
+@keyframes tdo-spin-rev{to{transform:rotate(-360deg)}}
+@keyframes tdo-pellet{0%,30%{transform:translate(0,0);opacity:1}46%{transform:translate(172px,-4px);opacity:1}48%,100%{transform:translate(172px,-4px);opacity:0}}
+@keyframes tdo-trigger{0%,26%{transform:none}32%{transform:rotate(-14deg)}40%,100%{transform:none}}
+@keyframes tdo-knock-top{0%,47%{transform:none;opacity:1}68%{transform:translate(70px,-46px) rotate(70deg);opacity:1}86%{transform:translate(120px,84px) rotate(140deg);opacity:0}87%,96%{transform:none;opacity:0}100%{transform:none;opacity:1}}
+@keyframes tdo-knock-mid{0%,48%{transform:none;opacity:1}70%{transform:translate(40px,-14px) rotate(36deg);opacity:1}86%{transform:translate(70px,60px) rotate(80deg);opacity:0}87%,96%{transform:none;opacity:0}100%{transform:none;opacity:1}}
+@keyframes tdo-chomp{0%,100%{transform:rotate(0)}40%{transform:rotate(15deg)}55%{transform:rotate(15deg)}75%{transform:rotate(1deg)}}
+@keyframes tdo-nod{0%,100%{transform:rotate(-2deg)}50%{transform:rotate(3deg)}}
+@keyframes tdo-bob{0%,100%{transform:translateY(0)}50%{transform:translateY(-7px)}}
+@keyframes tdo-dash{to{stroke-dashoffset:-50}}
+@keyframes tdo-felt{0%,12%{opacity:0}70%,100%{opacity:.92}}
+@keyframes tdo-needle{0%,100%{transform:translate(0,0) rotate(-24deg)}50%{transform:translate(26px,-14px) rotate(-24deg)}}
+@keyframes tdo-paint{from{stroke-dashoffset:110}to{stroke-dashoffset:0}}
+@keyframes tdo-twinkle{0%,100%{transform:scale(.55);opacity:.5}50%{transform:scale(1.15);opacity:1}}
+@keyframes tdo-roll{0%{transform:translateX(-5px)}50%{transform:translateX(5px)}100%{transform:translateX(-5px)}}
+html[data-motion="on"] .perform .ferris-rim{animation:tdo-spin 16s linear infinite;transform-origin:220px 236px}
+html[data-motion="on"] .perform .gondola{animation:tdo-spin-rev 16s linear infinite;transform-origin:0 0}
+html[data-motion="on"] .perform .wheel{animation:tdo-spin 1.8s linear infinite;transform-box:fill-box;transform-origin:center}
+html[data-motion="on"] .perform .truck-roll{animation:tdo-roll 1.8s ease-in-out infinite}
+html[data-motion="on"] .perform .pellet{animation:tdo-pellet 3.2s ease-in infinite}
+html[data-motion="on"] .perform .trigger{animation:tdo-trigger 3.2s ease-in-out infinite;transform-box:fill-box;transform-origin:top center}
+html[data-motion="on"] .perform .cups-top{animation:tdo-knock-top 3.2s ease-out infinite;transform-box:fill-box;transform-origin:center bottom}
+html[data-motion="on"] .perform .cups-mid{animation:tdo-knock-mid 3.2s ease-out infinite;transform-box:fill-box;transform-origin:center bottom}
+html[data-motion="on"] .perform .jaw{animation:tdo-chomp 2.6s ease-in-out infinite}
+html[data-motion="on"] .perform .puppet-head{animation:tdo-nod 2.6s ease-in-out infinite}
+html[data-motion="on"] .perform .kpat{animation:tdo-spin 9s linear infinite;transform-origin:0 0}
+html[data-motion="on"] .perform .bead{animation:tdo-bob 2.4s ease-in-out infinite;transform-box:fill-box;transform-origin:center}
+html[data-motion="on"] .perform .bead.b2{animation-delay:-.6s}html[data-motion="on"] .perform .bead.b3{animation-delay:-1.2s}html[data-motion="on"] .perform .bead.b4{animation-delay:-1.8s}
+html[data-motion="on"] .perform .bunny-outline{animation:tdo-dash 2.4s linear infinite}
+html[data-motion="on"] .perform .bunny-fill{animation:tdo-felt 4.2s ease-in-out infinite}
+html[data-motion="on"] .perform .needle{animation:tdo-needle 2.2s ease-in-out infinite;transform-box:fill-box}
+html[data-motion="on"] .perform .paint{stroke-dasharray:110;animation:tdo-paint 2.6s ease-out infinite alternate}
+html[data-motion="on"] .perform .spark{animation:tdo-twinkle 1.9s ease-in-out infinite;transform-box:fill-box;transform-origin:center}
+html[data-motion="on"] .perform .spark.s2{animation-delay:-.6s}html[data-motion="on"] .perform .spark.s3{animation-delay:-1.2s}
+.art-fill svg,svg.art-fill{width:100%;height:100%}
+.puppet-head,.jaw{transform-box:view-box}
+
+/* Reel clips: illustrated stand-ins for product/workshop video */
+@keyframes tdo-road{to{stroke-dashoffset:-76}}
+@keyframes tdo-hills{to{transform:translateX(-180px)}}
+@keyframes tdo-reveal{0%,6%{clip-path:inset(0 100% 0 0)}72%,100%{clip-path:inset(0 0 0 0)}}
+@keyframes tdo-brushpass{0%,6%{transform:translateX(0)}72%,100%{transform:translateX(230px)}}
+html[data-motion="on"] .reel-slide.is-current .clip-road{animation:tdo-road 1s linear infinite}
+html[data-motion="on"] .reel-slide.is-current .clip-far{animation:tdo-hills 7s linear infinite}
+html[data-motion="on"] .reel-slide.is-current .clip-color{animation:tdo-reveal 5.5s ease-in-out infinite}
+html[data-motion="on"] .reel-slide.is-current .clip-brush{animation:tdo-brushpass 5.5s ease-in-out infinite}
+.reel-slide:not(.is-current) .perform .wheel,.reel-slide:not(.is-current) .perform .truck-roll,.reel-slide:not(.is-current) .perform .needle{animation:none}
+.clip-blank{filter:grayscale(1) brightness(1.65) contrast(.7)}

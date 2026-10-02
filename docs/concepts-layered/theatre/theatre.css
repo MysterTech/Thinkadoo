@@ -1,0 +1,164 @@
+/* THE PAPER THEATRE: navy proscenium, curtains, flats that fly in and out.
+   Contract: docs/design/2026-10-03-layered-concepts.md §4A. Every animated rule names its job. */
+:root{
+  --navy:#201b4a;--teal:#32c3e0;--yellow:#fcda00;--red:#ef3a24;--green:#5cba47;--blue:#2960ad;--paper:#fffdf8;--ink:#221f1f;
+  --ease:cubic-bezier(.2,.8,.2,1);--header-h:76px;--wrap:1180px;--font-d:"Baloo 2","Fredoka","Trebuchet MS",system-ui,sans-serif;--font-b:"Nunito Sans",system-ui,-apple-system,"Segoe UI",sans-serif;
+  --focus:#fcda00;--focus-edge:#201b4a;
+  --zig:url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 48 14'%3E%3Cpath d='M0 14 12 1l12 13L36 1l12 13V14H0Z'/%3E%3C/svg%3E");
+}
+body.theatre{background:var(--navy);color:var(--navy);font:400 1.125rem/1.6 var(--font-b);-webkit-font-smoothing:antialiased}
+.theatre h1,.theatre h2,.theatre h3,.theatre .btn,.theatre .tab,.theatre .nav-link,.theatre .env-label{font-family:var(--font-d)}
+.wrap{width:min(var(--wrap),100%);margin-inline:auto;padding-inline:clamp(20px,4vw,48px)}
+
+/* ------------------------------------------------------------ header */
+.site-header{position:sticky;top:0;z-index:60;display:flex;align-items:center;gap:clamp(12px,2vw,28px);padding:10px clamp(16px,3vw,40px);background:var(--navy);color:#fff;min-height:var(--header-h)}
+.brand{display:block;width:clamp(112px,11vw,150px);flex:none}
+.brand img{width:100%;height:auto}
+.site-nav{display:flex;gap:6px;margin-inline:auto}
+.nav-link{position:relative;display:inline-flex;align-items:center;min-height:44px;padding:0 18px;color:#fff;text-decoration:none;font-weight:700;font-size:1.2rem;isolation:isolate}
+.nav-link::before{content:"";position:absolute;inset:6px 4px;background:var(--yellow);border-radius:10px;transform:scaleY(0);transform-origin:bottom;transition:transform .22s var(--ease);z-index:-1}
+.nav-link:hover,.nav-link:focus-visible{color:var(--navy)}
+.nav-link:hover::before,.nav-link:focus-visible::before{transform:scaleY(1)}
+.nav-link[aria-current="page"]{color:var(--yellow)}
+.nav-link[aria-current="page"]:hover{color:var(--navy)}
+.nav-link[aria-current="page"]::after{content:"";position:absolute;left:18px;right:18px;bottom:4px;height:4px;border-radius:4px;background:var(--yellow)}
+.header-tools{display:flex;align-items:center;gap:10px;flex:none}
+.cart-link{display:inline-flex;align-items:center;gap:8px;min-height:44px;padding:0 14px;border:3px solid #fff;border-radius:999px;text-decoration:none;font-weight:800;font-family:var(--font-d)}
+.cart-link[aria-current="page"]{background:var(--yellow);color:var(--navy);border-color:var(--yellow)}
+.cart-count{display:grid;place-items:center;min-width:1.7em;height:1.7em;border-radius:50%;background:var(--yellow);color:var(--navy);font-size:.85rem}
+.cart-link[aria-current="page"] .cart-count{background:var(--navy);color:var(--yellow)}
+.motion-btn{display:inline-flex;align-items:center;gap:8px;min-height:44px;padding:0 14px;border:3px solid rgba(255,255,255,.55);border-radius:999px;background:transparent;font-weight:700;font-size:.95rem;color:#fff}
+.mt-dot{width:12px;height:12px;border-radius:50%;background:var(--green);border:2px solid #fff}
+.motion-btn[aria-pressed="false"] .mt-dot{background:transparent}
+.concepts-link{font-size:.9rem;color:#fff;opacity:.8;text-underline-offset:3px}
+.menu-btn{display:none;align-items:center;gap:8px;min-height:44px;margin-left:auto;padding:0 16px;border:3px solid #fff;border-radius:999px;background:transparent;color:#fff;font-weight:800}
+@media (max-width:980px){
+  .concepts-link{display:none}
+  .menu-btn{display:inline-flex}
+  .site-nav{position:absolute;left:0;right:0;top:100%;flex-direction:column;gap:0;margin:0;padding:8px 16px 18px;background:var(--navy);border-top:3px solid var(--yellow);transform:translateY(-8px);opacity:0;visibility:hidden;transition:transform .25s var(--ease),opacity .2s,visibility 0s .25s}
+  .menu-open .site-nav{transform:none;opacity:1;visibility:visible;transition-delay:0s}
+  .nav-link{font-size:1.4rem;min-height:52px}
+  .cart-word{display:none}
+  .header-tools{margin-left:0}
+}
+@media (max-width:520px){.motion-btn .mt-label{display:none}.motion-btn{padding:0 12px}.brand{width:104px}}
+
+/* ------------------------------------------------------------ HOME hero: the stage */
+.act-hero .scene-stage{top:var(--header-h);height:calc(100svh - var(--header-h));display:grid;grid-template-rows:auto auto minmax(0,1fr) auto;background:var(--navy)}
+.act-subline{text-align:center;color:#fff;font:600 clamp(1rem,1.5vw,1.25rem)/1.35 var(--font-b);padding:0 clamp(16px,4vw,56px) 10px;text-wrap:balance}
+.act-title{text-align:center;font-weight:800;font-size:clamp(1.9rem,4.1vw,3.9rem);line-height:1.02;letter-spacing:-.01em;padding:6px clamp(16px,4vw,56px) 10px;text-wrap:balance}
+.hl-a{color:var(--yellow)}.hl-b{color:#fff}.hl-c{color:var(--teal)}
+.w{display:inline-block}
+@keyframes word-up{from{transform:translateY(55%) rotate(2deg);opacity:0}to{transform:none;opacity:1}}
+.act-title .w{animation:word-up .6s var(--ease) calc(.45s + var(--i)*45ms) both} /* Transition: the title card arrives as the curtain opens */
+.is-entering .act-title .w{animation-delay:calc(.9s + var(--i)*45ms)}
+.stage-slot{container-type:size;min-height:0;display:grid;place-items:end center}
+.stage-box{position:relative;width:min(100cqw,calc(100cqh * 2.2857));aspect-ratio:1600/700;overflow:hidden;background:var(--navy)}
+.plane,.plane-wrap{position:absolute;inset:0;width:100%;height:100%;pointer-events:none}
+.plane{overflow:visible;pointer-events:none}
+.plane-wrap>.plane{position:absolute}
+.stage-box a.prop{pointer-events:auto}
+
+/* depth: planes move by unequal amounts as the camera pushes in (Depth + Explain) */
+.p0{transform-origin:50% 75%;transform:translate3d(calc(var(--mx,0)*3px),calc(var(--s1,0)*-8px),0) scale(calc(1 + var(--s1,0)*.06))}
+.p1{transform-origin:50% 75%;transform:translate3d(calc(var(--mx,0)*7px),calc(var(--s1,0)*-6px),0) scale(calc(1 + var(--s1,0)*.17))}
+.p2{transform-origin:50% 88%;transform:translate3d(calc(var(--mx,0)*13px),calc(var(--s1,0)*34px),0) scale(calc(1 + var(--s1,0)*.36))}
+.p3{transform:translate3d(calc(var(--mx,0)*20px),0,0)}
+.act-hero .curtain.l{transform:translateX(calc(var(--s1,0)*-330px))}
+.act-hero .curtain.r{transform:translateX(calc(var(--s1,0)*330px))}
+.truck-art .wheel{transform-box:fill-box;transform-origin:center;transform:rotate(calc(var(--s1,0)*1080deg))}
+.ferris-far .ferris-rim{transform-origin:220px 236px;transform:rotate(calc(var(--s1,0)*70deg))}
+.ferris-far .gondola{transform-origin:0 0;transform:rotate(calc(var(--s1,0)*-70deg))}
+@keyframes curtain-open-l{from{transform:translateX(420px)}to{transform:none}}
+@keyframes curtain-open-r{from{transform:translateX(-420px)}to{transform:none}}
+.curtain-load.l{animation:curtain-open-l 1.25s .15s cubic-bezier(.6,0,.2,1) both}
+.curtain-load.r{animation:curtain-open-r 1.25s .15s cubic-bezier(.6,0,.2,1) both}
+.is-entering .curtain-load{animation:none}
+
+/* set change: flats fly out and drop in, staggered by plane (Reveal + Transition) */
+.set{transition:transform .85s cubic-bezier(.3,1.2,.5,1) .12s,visibility 0s}
+.p2 .set{transition-delay:.02s}
+.act-hero[data-active="shop"] .set-work,.act-hero[data-active="workshop"] .set-shop{transform:translateY(-114%);visibility:hidden;transition:transform .5s cubic-bezier(.6,0,.9,.5),visibility 0s .5s}
+
+/* props that are links: hover previews the click (Feedback) */
+.prop{cursor:pointer;outline:none}
+.prop .prop-body{transition:transform .32s var(--ease)}
+.prop:hover .prop-body,.prop:focus-visible .prop-body{transform:translateY(-16px)}
+.prop .tag{opacity:0;transform:translateY(-26px);transition:transform .34s cubic-bezier(.3,1.5,.5,1),opacity .2s}
+.prop:hover .tag,.prop:focus-visible .tag{opacity:1;transform:none}
+.prop:focus-visible .hit{stroke:var(--yellow);stroke-width:8;stroke-dasharray:20 12}
+@media (hover:none){.prop .tag{opacity:1;transform:none}}
+.prop-poster:hover .prop-body,.prop-poster:focus-visible .prop-body{transform:translateY(-14px) rotate(-1deg)}
+
+/* controls under the stage */
+.act-controls{background:var(--navy);padding:14px clamp(16px,4vw,56px) 18px}
+.act-tabbar{display:flex;gap:clamp(14px,3vw,36px);align-items:center;justify-content:center;flex-wrap:wrap}
+.tablist{display:inline-flex;gap:8px;padding:6px;background:#15113a;border-radius:999px}
+.tab{min-height:48px;padding:0 26px;border:0;border-radius:999px;background:transparent;color:#fff;font-weight:800;font-size:1.25rem;letter-spacing:.01em;transition:background .2s,color .2s,transform .14s var(--ease)}
+.tab:hover{background:rgba(255,255,255,.14)}
+.tab[aria-selected="true"]{background:var(--yellow);color:var(--navy)}
+.tab:active{transform:scale(.96)}
+.act-panels{display:flex;align-items:center;gap:20px;color:#fff;min-width:0}
+.tab-panel{display:flex;align-items:center;gap:clamp(12px,2vw,24px);flex-wrap:wrap}
+.tab-eyebrow{font:800 1.5rem/1 var(--font-d);color:var(--yellow)}
+.tab-text{max-width:34ch;font-size:1.1rem;line-height:1.35}
+.tab-panel .btn{min-height:46px;font-size:1.1rem}
+.tab-panel .btn-primary{border-color:var(--paper);box-shadow:4px 4px 0 var(--teal)}
+
+@media (max-width:760px){
+  .act-title{font-size:clamp(1.6rem,7.4vw,2.3rem)}
+  .act-subline{font-size:.95rem}
+  .stage-box{width:100cqw;height:min(100cqh,150cqw);aspect-ratio:auto}
+  .act-tabbar{flex-direction:column;gap:10px}
+  .tab-panel{justify-content:center;text-align:center}
+  .tab-text{font-size:1rem}
+}
+
+/* ------------------------------------------------------------ statement + brush that crosses the boundary */
+.statement{z-index:3;overflow:visible}
+.statement-inner{max-width:1000px}
+.statement-text{font:800 clamp(2rem,4.6vw,3.9rem)/1.08 var(--font-d);text-wrap:balance}
+.smear-wrap{position:relative;display:inline-block;white-space:nowrap}
+.smear{position:absolute;left:-2%;bottom:-.12em;width:104%;height:.3em;z-index:-1}
+.smear path{stroke-dasharray:420;stroke-dashoffset:0}
+html[data-motion="on"] [data-reveal="draw"]:not(.is-in) .smear path{stroke-dashoffset:420}
+.smear path{transition:stroke-dashoffset .9s var(--ease) .3s} /* Reveal: the sentence is painted as it is read */
+.straddle{position:absolute;right:clamp(24px,10vw,160px);bottom:-132px;width:78px;transform:rotate(16deg);z-index:4;pointer-events:none}
+.straddle svg{width:100%;height:auto;filter:drop-shadow(6px 6px 0 rgba(32,27,74,.25))}
+
+/* ------------------------------------------------------------ SUB-PAGE hero: curtains close as the information begins */
+.act-sub.scene .scene-stage{top:var(--header-h);height:calc(100svh - var(--header-h));display:grid;grid-template-rows:auto minmax(0,1fr);background:var(--navy)}
+.sub-title{text-align:center;padding:6px clamp(16px,4vw,56px) 12px}
+.sub-title h1{font-weight:800;font-size:clamp(2rem,5vw,4.8rem);line-height:1.02;letter-spacing:-.01em;text-wrap:balance;color:var(--yellow)}
+.sub-kicker{font:800 clamp(1.05rem,1.9vw,1.7rem)/1.1 var(--font-d);color:var(--teal);margin-bottom:.15em}
+.sub-sub{margin-top:.3em;color:#fff;font-size:1.15rem}
+.act-sub .p2{transform:translate3d(calc(var(--mx,0)*13px),calc(var(--s1,0)*16px),0) scale(calc(1 + var(--s1,0)*.16))}
+.act-sub .p1{transform:translate3d(calc(var(--mx,0)*7px),0,0) scale(calc(1 + var(--s1,0)*.08))}
+.act-sub .curtain.l{transform:translateX(calc(var(--s1,0)*500px))}
+.act-sub .curtain.r{transform:translateX(calc(var(--s1,0)*-500px))}
+html[data-motion="off"] .act-sub.scene .scene-stage{min-height:auto}
+@media (max-width:760px){.sub-title h1{font-size:clamp(1.6rem,7.4vw,2.3rem)}}
+
+/* ------------------------------------------------------------ page transition: the curtains close, then open (Transition) */
+.page-cover{position:fixed;inset:0;z-index:1000;pointer-events:none;display:grid;grid-template-columns:1fr 1fr;overflow:hidden}
+.page-cover::before,.page-cover::after{content:"";background:var(--red);transform:translateX(-101%);box-shadow:inset 0 0 0 0 transparent}
+.page-cover::before{box-shadow:inset -14px 0 0 var(--yellow)}
+.page-cover::after{transform:translateX(101%);box-shadow:inset 14px 0 0 var(--yellow)}
+.is-leaving .page-cover{pointer-events:all}
+.is-leaving .page-cover::before,.is-leaving .page-cover::after{transform:none;transition:transform .52s cubic-bezier(.7,0,.3,1)}
+@keyframes cover-l{from{transform:none}to{transform:translateX(-101%)}}
+@keyframes cover-r{from{transform:none}to{transform:translateX(101%)}}
+.is-entering .page-cover::before{animation:cover-l .7s .05s cubic-bezier(.7,0,.3,1) both}
+.is-entering .page-cover::after{animation:cover-r .7s .05s cubic-bezier(.7,0,.3,1) both}
+html[data-motion="off"] .page-cover{display:none}
+
+/* story + ready: illustrated companions that cross the band edge (depth by overlap) */
+.story-grid{grid-template-columns:minmax(0,1fr) minmax(0,.8fr);gap:clamp(24px,5vw,72px);max-width:none;align-items:start}
+.story-art{position:sticky;top:calc(var(--header-h) + 24px);width:100%;max-width:480px;justify-self:end}
+.story-art svg{width:100%;height:auto;border-radius:26px;border:5px solid var(--navy);box-shadow:9px 9px 0 var(--navy);background:var(--teal)}
+@media (max-width:900px){.story-grid{grid-template-columns:1fr}.story-art{position:static;max-width:380px;justify-self:start}}
+.ready-band{overflow:visible;z-index:2}
+.ready-art{position:absolute;right:max(16px,4vw);bottom:-110px;width:min(48vw,600px);z-index:3;pointer-events:none}
+.ready-art svg{width:100%;height:auto}
+.share-band{padding-top:clamp(120px,12vw,180px)}
+@media (max-width:900px){.ready-art{position:static;width:min(82vw,420px);margin:28px 0 -40px auto}.share-band{padding-top:80px}}

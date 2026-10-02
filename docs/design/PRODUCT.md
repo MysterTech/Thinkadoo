@@ -20,7 +20,7 @@ Lead with imagination, art and creative discovery through screen-free hands-on e
 
 ## Capabilities and Constraints
 
-Current review set: docs/concepts-motion/, governed by docs/design/2026-10-02-motion-concepts.md. Both source Docs were freshly read in full and preserved at docs/research/2026-10-02-source-refresh.md. This pass prioritises authored scroll transformations, direct making interactions and text/illustration motion beyond the earlier sets. Older sets are preserved; source customer facts remain the same.
+Newest review set (3 Oct 2026): docs/concepts-layered/, governed by docs/design/2026-10-03-layered-concepts.md (layered scenes, purposeful motion, one shared copy file) and docs/design/2026-10-03-copy-polish.md (the logged copy edits). The earlier note follows. Current review set: docs/concepts-motion/, governed by docs/design/2026-10-02-motion-concepts.md. Both source Docs were freshly read in full and preserved at docs/research/2026-10-02-source-refresh.md. This pass prioritises authored scroll transformations, direct making interactions and text/illustration motion beyond the earlier sets. Older sets are preserved; source customer facts remain the same.
 
 Required site areas: home, shop/collection, product, workshops and booking, our story, contact and practical footer information. User explicitly rejected the old homepage look. Architecture is deferred. All documentation and concept artifacts belong in docs/. frontend/ is reserved for the final frontend. No live orders, payments, reservations or personal data collection in these prototypes.
 

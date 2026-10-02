@@ -1,0 +1,228 @@
+/* THE MELA ROAD: a pinned side-scroll. Contract: docs/design/2026-10-03-layered-concepts.md 4C. */
+:root{
+  --navy:#201b4a;--teal:#32c3e0;--yellow:#fcda00;--red:#ef3a24;--green:#5cba47;--blue:#2960ad;--paper:#fffdf8;--ink:#221f1f;
+  --ease:cubic-bezier(.2,.8,.2,1);--header-h:76px;--wrap:1180px;
+  --font-d:"Lilita One","Baloo 2","Trebuchet MS",system-ui,sans-serif;--font-b:"Figtree",system-ui,-apple-system,"Segoe UI",sans-serif;
+  --focus:#201b4a;--focus-edge:#fcda00;
+  --u:calc((100svh - var(--header-h)) / 800);
+  --zig:url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 60 14'%3E%3Cpath d='M0 14 8 4h44l8 10Z'/%3E%3C/svg%3E");
+}
+body.mela-road{background:var(--teal);color:var(--navy);font:500 1.125rem/1.6 var(--font-b);-webkit-font-smoothing:antialiased}
+.mela-road h1,.mela-road h2,.mela-road h3,.mela-road .btn,.mela-road .tab,.mela-road .nav-link,.mela-road .env-label{font-family:var(--font-d);font-weight:400}
+.band::before{-webkit-mask:var(--zig) 0 0/60px 14px repeat-x;mask:var(--zig) 0 0/60px 14px repeat-x}
+.sec-title{font-weight:400;letter-spacing:.005em}
+
+/* ------------------------------------------------------------ header: a painted sign board */
+.site-header{position:sticky;top:0;z-index:60;display:flex;align-items:center;gap:clamp(12px,2vw,28px);padding:10px clamp(16px,3vw,40px);background:var(--yellow);color:var(--navy);min-height:var(--header-h);border-bottom:5px solid var(--navy)}
+.brand{display:block;width:clamp(112px,11vw,150px);flex:none}
+.brand img{width:100%;height:auto}
+.site-nav{display:flex;gap:6px;margin-inline:auto}
+.nav-link{position:relative;display:inline-flex;align-items:center;min-height:46px;padding:0 20px;color:var(--navy);text-decoration:none;font-size:1.3rem;border-radius:12px;border:3px solid transparent;transition:background .18s,color .18s,transform .2s var(--ease)}
+.nav-link:hover,.nav-link:focus-visible{background:var(--navy);color:var(--yellow);transform:translateY(-3px)}
+.nav-link[aria-current="page"]{background:var(--red);color:#fff;border-color:var(--navy);box-shadow:3px 3px 0 var(--navy)}
+.header-tools{display:flex;align-items:center;gap:10px;flex:none}
+.cart-link{display:inline-flex;align-items:center;gap:8px;min-height:46px;padding:0 16px;border:3px solid var(--navy);border-radius:12px;text-decoration:none;font-family:var(--font-d);font-size:1.15rem;background:var(--paper)}
+.cart-link[aria-current="page"]{background:var(--red);color:#fff}
+.cart-count{display:grid;place-items:center;min-width:1.7em;height:1.7em;border-radius:50%;background:var(--navy);color:var(--yellow);font-size:.85rem}
+.motion-btn{display:inline-flex;align-items:center;gap:8px;min-height:46px;padding:0 14px;border:3px solid var(--navy);border-radius:12px;background:transparent;font-weight:700;font-size:.95rem;color:var(--navy)}
+.mt-dot{width:12px;height:12px;border-radius:50%;background:var(--green);border:2px solid var(--navy)}
+.motion-btn[aria-pressed="false"] .mt-dot{background:transparent}
+.concepts-link{font-size:.9rem;color:var(--navy);text-underline-offset:3px;font-weight:700}
+.menu-btn{display:none;align-items:center;gap:8px;min-height:46px;margin-left:auto;padding:0 16px;border:3px solid var(--navy);border-radius:12px;background:var(--paper);color:var(--navy);font-weight:800}
+@media (max-width:980px){
+  .concepts-link{display:none}.menu-btn{display:inline-flex}
+  .site-nav{position:absolute;left:0;right:0;top:100%;flex-direction:column;gap:4px;margin:0;padding:10px 16px 18px;background:var(--yellow);border-bottom:5px solid var(--navy);transform:translateY(-8px);opacity:0;visibility:hidden;transition:transform .25s var(--ease),opacity .2s,visibility 0s .25s}
+  .menu-open .site-nav{transform:none;opacity:1;visibility:visible;transition-delay:0s}
+  .nav-link{font-size:1.5rem;min-height:54px}.cart-word{display:none}.header-tools{margin-left:0}
+}
+@media (max-width:520px){.motion-btn .mt-label{display:none}.motion-btn{padding:0 12px}.brand{width:104px}}
+
+/* buttons: stamped metal signs */
+.btn{display:inline-flex;align-items:center;justify-content:center;gap:.6em;min-height:54px;padding:.5em 1.5em;border:4px solid var(--navy);border-radius:14px;font-size:1.3rem;line-height:1.1;text-decoration:none;color:var(--navy);background:var(--paper);box-shadow:6px 6px 0 var(--navy);transition:transform .14s var(--ease),box-shadow .14s var(--ease)}
+.btn .ico{width:1.1em;height:1.1em;transition:transform .2s var(--ease)}
+.btn:hover{transform:translate(-2px,-2px);box-shadow:8px 8px 0 var(--navy)}
+.btn:hover .ico{transform:translateX(5px)}
+.btn:active{transform:translate(6px,6px);box-shadow:0 0 0 var(--navy)}
+.btn-primary{background:var(--yellow)}
+.band-navy .btn,.band-blue .btn,.band-red .btn{border-color:var(--paper);box-shadow:6px 6px 0 var(--yellow)}
+.band-navy .btn-ghost,.band-blue .btn-ghost{background:transparent;color:#fff}
+.band-navy .btn:hover,.band-blue .btn:hover,.band-red .btn:hover{box-shadow:8px 8px 0 var(--yellow)}
+.band-navy .btn:active,.band-blue .btn:active,.band-red .btn:active{box-shadow:0 0 0 var(--yellow)}
+
+/* ------------------------------------------------------------ the road: layers in world units (--u px per unit) */
+.road-scene .scene-stage{top:var(--header-h);height:calc(100svh - var(--header-h));background:var(--teal);overflow:hidden}
+.layer{position:absolute;left:0;top:0;height:100%;width:calc(11000 * var(--u));pointer-events:none;will-change:transform}
+.l-mid{pointer-events:none}
+.obj{position:absolute;left:calc((var(--x) - var(--w) / 2) * var(--u));bottom:calc(var(--b) * var(--u));width:calc(var(--w) * var(--u));height:auto;overflow:visible}
+.l-sky .obj{opacity:.95}
+.ground{position:absolute;left:0;right:0;bottom:0;height:calc(235 * var(--u));pointer-events:none}
+.ground::before{content:"";position:absolute;left:0;right:0;top:0;bottom:calc(150 * var(--u));background:var(--green);border-top:5px solid var(--navy)}
+.road{position:absolute;left:0;right:0;bottom:0;height:calc(150 * var(--u));background-color:var(--yellow);border-top:5px solid var(--navy);background-image:url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 200 14'%3E%3Crect x='20' width='110' height='14' rx='7' fill='%23fffdf8'/%3E%3C/svg%3E");background-repeat:repeat-x;background-size:calc(200 * var(--u)) calc(14 * var(--u));background-position-y:calc(68 * var(--u))}
+.truck{position:absolute;left:36%;bottom:calc(16 * var(--u));width:min(calc(560 * var(--u)),84vw);transform:translateX(-50%);pointer-events:none;z-index:2}
+.truck svg{width:100%;height:auto;overflow:visible}
+.truck .wheel{transform-box:fill-box;transform-origin:center;transform:rotate(calc(var(--wheel,0) * 1deg))}
+.l-near{z-index:3}
+.near-bunting{position:absolute;left:calc(var(--x) * var(--u));top:-8px;width:calc(3000 * var(--u))}
+.near-bunting svg{width:100%;height:auto;overflow:visible}
+.near-kid{filter:none}
+@media (max-width:760px){.truck{left:50%}}
+
+/* signs: HTML boards riding in the stall plane */
+.sign{position:absolute;left:calc(var(--x) * var(--u));transform:translateX(-50%);width:min(calc(var(--sw) * var(--u)),92vw);pointer-events:auto;text-align:center}
+.billboard{bottom:calc(290 * var(--u));background:var(--paper);border:5px solid var(--navy);border-radius:26px;box-shadow:10px 10px 0 var(--navy);padding:calc(24 * var(--u)) calc(34 * var(--u)) calc(26 * var(--u))}
+.billboard::before,.billboard::after{content:"";position:absolute;top:100%;width:14px;height:calc(120 * var(--u));background:var(--navy)}
+.billboard::before{left:14%}.billboard::after{right:14%}
+.road-title{font-size:clamp(1.7rem,calc(54 * var(--u)),4.4rem);line-height:1.04;text-wrap:balance;color:var(--navy)}
+.hl-y{color:var(--red)}.hl-w{color:var(--navy)}
+.w{display:inline-block}
+@keyframes word-up{from{transform:translateY(55%) rotate(2deg);opacity:0}to{transform:none;opacity:1}}
+.road-title .w{animation:word-up .6s var(--ease) calc(.25s + var(--i) * 45ms) both}
+.road-sub{margin-top:.5em;font-size:clamp(1.05rem,calc(24 * var(--u)),1.5rem);font-weight:700;max-width:46ch;margin-inline:auto}
+.sub-board{bottom:calc(300 * var(--u))}
+.sub-board .road-title{font-size:clamp(1.8rem,calc(50 * var(--u)),4.6rem)}
+.sub-kicker{font:400 clamp(1.05rem,calc(26 * var(--u)),1.5rem)/1.1 var(--font-d);color:var(--red);margin-bottom:.1em}
+.stall-sign{bottom:calc(500 * var(--u));background:var(--navy);color:#fff;border:5px solid var(--paper);border-radius:22px;box-shadow:9px 9px 0 var(--red);padding:calc(22 * var(--u)) calc(28 * var(--u)) calc(26 * var(--u));text-align:left;display:grid;gap:calc(10 * var(--u))}
+.sign-tab{position:absolute;left:24px;top:-26px;padding:.1em .9em;border:4px solid var(--navy);border-radius:12px 12px 0 0;background:#4a4492;color:#d8dbf5;font:400 1.3rem var(--font-d);transition:background .25s,color .25s}
+.sign.is-here .sign-tab{background:var(--yellow);color:var(--navy)}  /* Feedback: the chapter under the camera lights up */
+.sign.is-here.stall-sign{box-shadow:9px 9px 0 var(--yellow)}
+.sign-eyebrow{font:400 clamp(1.5rem,calc(36 * var(--u)),2.2rem) var(--font-d);color:var(--yellow)}
+.sign-text{font-size:clamp(1rem,calc(22 * var(--u)),1.25rem);line-height:1.35;font-weight:600}
+.stall-sign .btn{justify-self:start;min-height:48px;font-size:1.15rem;border-color:var(--paper);box-shadow:5px 5px 0 var(--yellow)}
+.hands-sign{bottom:calc(330 * var(--u));background:var(--red);color:#fff;border:5px solid var(--navy);border-radius:28px;box-shadow:10px 10px 0 var(--navy);padding:calc(30 * var(--u)) calc(40 * var(--u))}
+.hands-sign::before,.hands-sign::after{content:"";position:absolute;top:100%;width:14px;height:calc(150 * var(--u));background:var(--navy)}
+.hands-sign::before{left:14%}.hands-sign::after{right:14%}
+.hands-text{font:400 clamp(1.7rem,calc(50 * var(--u)),3.8rem)/1.08 var(--font-d);text-wrap:balance}
+.screen-sign{bottom:calc(205 * var(--u));width:min(calc(var(--sw) * var(--u)),94vw)}
+@media (max-width:760px){.screen-sign{bottom:calc(400 * var(--u))}}
+.reel-drive{max-width:none}
+.reel-drive .reel-screen{border-color:var(--navy);outline-color:var(--yellow);box-shadow:10px 10px 0 var(--navy)}
+.obj-link{position:absolute;left:calc((var(--x) - var(--w) / 2) * var(--u));bottom:calc(var(--b) * var(--u));width:calc(var(--w) * var(--u));pointer-events:auto;display:block;transition:transform .3s var(--ease)}
+.obj-link svg{width:100%;height:auto;overflow:visible}
+.obj-tag{position:absolute;left:50%;bottom:100%;transform:translate(-50%,10px);margin-bottom:6px;padding:.1em .8em;border:4px solid var(--navy);border-radius:12px;background:var(--yellow);font:400 1.4rem var(--font-d);white-space:nowrap;opacity:0;transition:transform .3s cubic-bezier(.3,1.5,.5,1),opacity .2s}
+.obj-link:hover,.obj-link:focus-visible{transform:translateY(calc(-14 * var(--u)))}
+.obj-link:hover .obj-tag,.obj-link:focus-visible .obj-tag{opacity:1;transform:translate(-50%,0)}
+@media (hover:none){.obj-tag{opacity:1;transform:translate(-50%,0)}}
+
+/* drive-to tabs */
+.road-tabs{position:absolute;top:14px;left:50%;transform:translateX(-50%);z-index:6;display:flex;gap:6px;padding:6px;background:var(--navy);border-radius:16px;border:4px solid var(--paper);box-shadow:5px 5px 0 rgba(32,27,74,.4)}
+.road-tabs .tab{min-height:46px;padding:0 24px;border:0;border-radius:10px;background:transparent;color:#fff;font:400 1.3rem var(--font-d);transition:background .2s,color .2s,transform .14s var(--ease)}
+.road-tabs .tab:hover{background:rgba(255,255,255,.16)}
+.road-tabs .tab[aria-pressed="true"]{background:var(--yellow);color:var(--navy)}
+.road-tabs .tab:active{transform:scale(.95)}
+
+/* motion off: the road collapses to a still poster with the chapters stacked */
+html[data-motion="off"] .road-scene .scene-stage{height:auto;min-height:0;overflow:visible;display:grid;gap:clamp(18px,3vw,32px);padding:clamp(28px,5vw,64px) clamp(16px,4vw,48px)}
+html[data-motion="off"] .road-stage .layer{position:static;width:auto;height:auto;transform:none!important}
+html[data-motion="off"] .road-stage .l-sky,html[data-motion="off"] .road-stage .l-far,html[data-motion="off"] .road-stage .l-near,html[data-motion="off"] .road-stage .ground,html[data-motion="off"] .road-stage .road-tabs,html[data-motion="off"] .road-stage .obj{display:none}
+html[data-motion="off"] .road-stage .l-mid{display:grid;gap:clamp(28px,4vw,48px);justify-items:center}
+html[data-motion="off"] .road-stage .sign{position:static;transform:none;width:min(820px,100%);margin:0}
+html[data-motion="off"] .road-stage .sign::before,html[data-motion="off"] .road-stage .sign::after{display:none}
+html[data-motion="off"] .road-stage .sign-tab{position:static;display:inline-block;margin-bottom:10px;border-radius:10px}
+html[data-motion="off"] .road-stage .truck{position:static;transform:none;width:min(480px,90%);margin:8px auto 0;order:5}
+html[data-motion="off"] .road-stage .obj-link{position:static;width:min(320px,80%);margin:0 auto}
+html[data-motion="off"] .road-stage .obj-tag{opacity:1;position:static;transform:none;display:block;text-align:center;margin-top:8px}
+
+/* ------------------------------------------------------------ phrase band */
+.phrase-band{background:var(--red);color:#b72818;overflow:hidden;white-space:nowrap;padding:12px 0;border-top:5px solid var(--navy);border-bottom:5px solid var(--navy)}
+.phrase-track{display:inline-flex;font:400 clamp(3rem,8vw,6rem)/1 var(--font-d);animation:phrase 40s linear infinite}
+.phrase-track span{padding-right:.6em}
+@keyframes phrase{to{transform:translateX(-50%)}}
+.is-offscreen .phrase-track,.phrase-band:hover .phrase-track{animation-play-state:paused}
+
+/* ------------------------------------------------------------ reel on the drive-in screen */
+.reel-screen{position:relative;aspect-ratio:16/10;border:8px solid var(--navy);border-radius:14px;overflow:hidden;background:var(--teal)}
+.reel-slide{position:absolute;inset:0;opacity:0;visibility:hidden;transition:opacity .45s,visibility 0s .45s}
+.reel-slide.is-current{opacity:1;visibility:visible;transition-delay:0s}
+.clip{position:absolute;inset:0;width:100%;height:100%}
+.reel-cap{position:absolute;left:0;right:0;bottom:0;display:grid;grid-template-columns:1fr auto;gap:0 18px;align-items:end;padding:14px 20px 16px;background:var(--navy);color:#fff}
+.reel-name{grid-column:1;font:400 clamp(1.3rem,2.4vw,1.9rem)/1 var(--font-d);color:var(--yellow)}
+.reel-line{grid-column:1;font-size:1rem;font-weight:600}
+.reel-link{grid-column:2;grid-row:1/3;display:inline-flex;align-items:center;gap:8px;min-height:44px;padding:0 18px;border-radius:12px;background:var(--yellow);color:var(--navy);font:400 1.15rem var(--font-d);text-decoration:none}
+.reel-link .ico{transition:transform .2s var(--ease)}.reel-link:hover .ico{transform:translateX(4px)}
+.reel-ui{display:flex;align-items:center;justify-content:center;gap:12px;margin-top:14px}
+.reel-btn{display:grid;place-items:center;width:50px;height:50px;border:4px solid var(--navy);border-radius:12px;background:var(--yellow);color:var(--navy);box-shadow:3px 3px 0 var(--navy)}
+.reel-btn:hover{transform:translate(-1px,-1px)}.reel-btn:active{transform:translate(3px,3px);box-shadow:0 0 0 var(--navy)}
+.reel-btn .i-play{display:none}.reel-btn[data-state="paused"] .i-pause{display:none}.reel-btn[data-state="paused"] .i-play{display:block}
+.reel-dots{display:flex;gap:8px;margin-inline:8px}
+.reel-dot{width:44px;height:44px;border:0;background:none;display:grid;place-items:center}
+.reel-dot::before{content:"";width:18px;height:18px;border-radius:5px;border:4px solid var(--navy);background:var(--paper);transition:background .2s,transform .2s var(--ease)}
+.reel-dot[aria-current="true"]::before{background:var(--red);transform:scale(1.2) rotate(45deg)}
+.reel-note{margin-top:10px;text-align:center;font-weight:800;font-size:.95rem;background:var(--paper);border:3px solid var(--navy);border-radius:999px;width:max-content;margin-inline:auto;padding:.1em 1em}
+
+/* ------------------------------------------------------------ mela passage: each line arrives with its object */
+.mela-scene .scene-stage{top:var(--header-h);height:calc(100svh - var(--header-h));background:var(--paper);display:grid;align-items:center}
+.ms-grid{display:grid;grid-template-columns:minmax(0,.9fr) minmax(0,1.1fr);gap:clamp(20px,5vw,72px);align-items:center;width:min(1240px,100%)}
+.ms-text .story-lead{font:400 clamp(2rem,4vw,3.4rem)/1.05 var(--font-d);text-wrap:balance;margin-bottom:.4em}
+.ms-list{display:grid;gap:.05em;margin:0;font:400 clamp(1.7rem,3vw,2.6rem)/1.2 var(--font-d)}
+.sl{color:var(--red)}.sl:nth-child(3n+2){color:var(--blue)}.sl:nth-child(3n){color:#2f8a1e}
+.sl[data-line="0"]{opacity:calc(.18 + var(--s1,1) * .82)}.sl[data-line="1"]{opacity:calc(.18 + var(--s2,1) * .82)}.sl[data-line="2"]{opacity:calc(.18 + var(--s3,1) * .82)}.sl[data-line="3"]{opacity:calc(.18 + var(--s4,1) * .82)}.sl[data-line="4"]{opacity:calc(.18 + var(--s5,1) * .82)}.sl[data-line="5"]{opacity:calc(.18 + var(--s6,1) * .82)}
+.ms-art{width:100%;height:auto;border-radius:26px;border:5px solid var(--navy);box-shadow:10px 10px 0 var(--navy);background:var(--teal)}
+.o{transform-box:fill-box;transform-origin:50% 100%;opacity:var(--sk,1);transform:scale(calc(.55 + var(--sk,1) * .45))} /* Reveal: the object arrives with its line */
+.o0{--sk:var(--s1,1)}.o1{--sk:var(--s2,1)}.o2{--sk:var(--s3,1)}.o3{--sk:var(--s4,1)}.o4{--sk:var(--s5,1)}.o5{--sk:var(--s6,1)}
+@media (max-width:860px){.ms-grid{grid-template-columns:1fr;gap:12px}.ms-art-wrap{max-width:420px}.mela-scene .scene-stage{align-items:start;padding-top:12px}}
+.story-rest-band .story{max-width:880px}
+.story p,.story li{font-size:clamp(1.2rem,1.9vw,1.5rem);line-height:1.4}
+.story{display:grid;gap:.9em}
+.story-steps,.story-questions{display:grid;gap:.1em;font:400 clamp(1.5rem,2.6vw,2.2rem) var(--font-d)}
+.story-questions{color:var(--blue)}
+.story-punch,.story-quote{font:400 clamp(1.8rem,3.6vw,3rem)/1.1 var(--font-d);color:var(--red)}
+.story-lead,.story-q{font:400 clamp(2rem,4.4vw,3.6rem)/1.05 var(--font-d);text-wrap:balance}
+.story-list{display:grid;gap:.05em;font:400 clamp(1.5rem,2.6vw,2.2rem)/1.2 var(--font-d);color:var(--red)}
+.story-list li:nth-child(3n+2){color:var(--blue)}.story-list li:nth-child(3n){color:#2f8a1e}
+.story-verbs{font:400 clamp(1.8rem,3.4vw,2.8rem)/1.1 var(--font-d);color:var(--blue)}
+.story-solo{max-width:880px}
+.cross-grid{display:grid;justify-items:center}.cross-card{max-width:620px;display:grid;gap:14px;justify-items:start}.cross-card .tab-eyebrow{color:var(--red);font:400 2rem var(--font-d)}.cross-text{font-size:1.5rem;line-height:1.3;font-weight:700}
+
+/* ------------------------------------------------------------ Ferris wheel selector */
+.wheel-set{display:grid;grid-template-columns:minmax(0,.85fr) minmax(0,1.15fr);gap:clamp(22px,4vw,56px);align-items:center}
+.wheel-stage{position:relative}
+.fw{max-width:480px;margin-inline:auto}
+.fw-svg{width:100%;height:auto;overflow:visible}
+.fw-svg .ferris-rim{transform-origin:220px 236px;transform:rotate(calc(var(--turn,180) * 1deg));transition:transform .9s cubic-bezier(.5,0,.2,1)} /* Explain + Reveal: the wheel brings the chosen activity to the bottom */
+.fw-svg .gondola{transform-origin:0 0;transform:rotate(calc(var(--turn,180) * -1deg));transition:transform .9s cubic-bezier(.5,0,.2,1)}
+.fw-svg .gondola.is-sel rect{stroke-width:8}
+.wheel-nav{display:flex;gap:10px;justify-content:center;margin-top:10px}
+.wheel-side{display:grid;gap:18px;min-width:0}
+.wheel-row{display:flex;flex-wrap:wrap;gap:8px}
+.wheel-btn{display:inline-flex;align-items:center;gap:8px;min-height:46px;padding:0 14px 0 6px;border:4px solid var(--navy);border-radius:12px;background:var(--paper);color:var(--navy);font:400 1rem var(--font-d);box-shadow:3px 3px 0 var(--navy);transition:transform .14s var(--ease),box-shadow .14s,background .2s}
+.wheel-btn:hover{transform:translate(-1px,-2px);box-shadow:5px 5px 0 var(--navy)}
+.wb-n{display:grid;place-items:center;width:32px;height:32px;border-radius:8px;background:var(--navy);color:var(--yellow);font-size:1.05rem}
+.wb-name{display:none}
+.wheel-btn[aria-selected="true"]{background:var(--red);color:#fff}
+.wheel-btn[aria-selected="true"] .wb-n{background:var(--yellow);color:var(--navy)}
+.wheel-panel{background:var(--navy);color:#fff;border:5px solid var(--navy);border-radius:22px;box-shadow:9px 9px 0 var(--red);padding:clamp(18px,3vw,34px)}
+@media (max-width:900px){.wheel-set{grid-template-columns:1fr}.fw{max-width:320px}}
+
+/* envelope panel shared look */
+.env-panel{display:grid;grid-template-columns:minmax(0,.8fr) minmax(0,1.2fr);gap:clamp(16px,3vw,36px);align-items:center;animation:env-in .5s var(--ease) both}
+@keyframes env-in{from{opacity:0;transform:translateY(22px)}to{opacity:1;transform:none}}
+.env-art{aspect-ratio:1;width:100%;max-width:300px;margin-inline:auto;display:grid;place-items:center;background:var(--yellow);border-radius:20px;border:5px solid var(--paper);padding:6%}
+.env-art svg{width:100%;height:100%}
+.env-name{font:400 clamp(1.7rem,3vw,2.4rem)/1 var(--font-d);color:var(--yellow)}
+.env-num{color:var(--teal)}
+.env-verbs{margin-top:.5em;font:400 1.1rem var(--font-d);color:var(--teal)}
+.env-lines{display:grid;gap:.4em;margin-top:.9em;font-size:1.1rem;line-height:1.45}
+.env-contains{margin-top:1em;padding-top:1em;border-top:3px dashed rgba(255,255,255,.4);font-size:1rem}
+.env-nav{display:none}
+@media (max-width:700px){.env-panel{grid-template-columns:1fr}}
+
+/* ------------------------------------------------------------ page transition: a truck-sized shutter sweeps across */
+.page-cover{position:fixed;inset:0;z-index:1000;pointer-events:none;background:var(--red);transform:translateX(-101%);box-shadow:inset -18px 0 0 var(--yellow)}
+.page-cover::after{content:"";position:absolute;right:-18px;top:50%;width:0;height:0}
+.is-leaving .page-cover{pointer-events:all;transform:none;transition:transform .5s cubic-bezier(.7,0,.3,1)}
+@keyframes shutter-out{from{transform:none}to{transform:translateX(101%)}}
+.is-entering .page-cover{animation:shutter-out .65s .05s cubic-bezier(.7,0,.3,1) both}
+html[data-motion="off"] .page-cover{display:none}
+
+@media (max-width:760px){
+  .l-mid .obj.stall{transform:scale(.72);transform-origin:50% 100%}
+  .billboard{bottom:calc(215 * var(--u))}
+  .billboard::before,.billboard::after{height:calc(60 * var(--u))}
+  .road-title,.sub-board .road-title{font-size:clamp(1.5rem,7.6vw,2.3rem)}
+  .road-sub{font-size:.95rem}
+  .road-tabs{top:8px}.road-tabs .tab{min-height:44px;padding:0 18px;font-size:1.15rem}
+  .stall-sign{bottom:calc(420 * var(--u));padding:16px 18px 18px}
+  .hands-sign{bottom:calc(260 * var(--u))}
+  .hands-text{font-size:clamp(1.4rem,6.2vw,2rem)}
+  .sub-board{bottom:calc(250 * var(--u))}
+}

@@ -13,6 +13,10 @@ colors:
 
 # Design System: Thinkadoo exploration
 
+## Newest exploration: 3 October 2026
+
+Four layered concepts in docs/concepts-layered/ (Paper Theatre, Playroom, Mela Road, Sticker Book), governed by docs/design/2026-10-03-layered-concepts.md. Taste anchors are the earlier Playroom and Paper Theatre: flat saturated fills, deep-blue outlines, hard offset shadows, paper cards, one staged scene of four planes per hero. The Motion Charter there (five jobs: reveal, explain, depth, feedback, transition) supersedes the older "one main mechanism" wording for this set. Shared structural CSS: docs/concepts-layered/shared/blocks.css; shared runtime: shared/engine.js.
+
 ## Current exploration — 2 October2026
 
 The newest motion-led review set is governed by docs/design/2026-10-02-motion-concepts.md and docs/research/2026-10-02-source-refresh.md. Four new worlds: Unbox a little universe (yellow/red packaging), Type is a toy (red kinetic poster), A world in a fold (cobalt paper geometry), and The print club (teal print studio). ui-ux-designer and impeccable inform full flow/state coverage and craft critique. Primary actions remain stable; substantial scroll transforms change depicted materials, type and section boundaries. Source identity stays fixed. No world is selected for production; previous sets remain intact.
